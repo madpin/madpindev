@@ -1,15 +1,17 @@
 baseurl: https://madpin.dev
 title: Thiago MadPin's Blog
-theme: hugo-theme-cleanwhite
+theme: ["hugo-admonitions", "hugo-theme-cleanwhite"]
 
 languageCode: en-us
 disqusShortname: ""
 googleAnalytics: ""
+plantuml: true
 
 preserveTaxonomyNames: true
 hasCJKLanguage: true
-paginate: 10
-
+# paginate: 10
+pagination:
+  pagerSize: 10
 
 outputs:
   home:

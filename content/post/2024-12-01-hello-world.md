@@ -5,9 +5,11 @@ subtitle:   "Or should I say 'Olá Mundo'?"
 date:       2024-12-01
 author:     "Thiago MadPin"
 image:      "/img/bg/Designer.jpeg"
+image_description: "Designer"
+tags:       ["me"]
 ---
 
-<!-- # Hello World! (Or should I say "Olá Mundo"?) -->
+<!--- # Hello World! (Or should I say "Olá Mundo"?) -->
 
 
 Hey everyone, I'm Thiago, a Software Engineer at Indeed, calling Dublin, Ireland home these days.
@@ -20,6 +22,10 @@ After earning my degree in Automation and Control Engineering, I knew I was dest
 
 My career has been anything but linear – and I wouldn't have it any other way!
 It all started over a decade ago, diving into the worlds of C#, PHP, and mobile development back in Brazil.  Over the years, I've transitioned through various roles, from Business Intelligence Analyst to Data Engineer, and now to my current position as a Staff Software Engineer.  This journey has allowed me to hone my skills in data intelligence and problem-solving, becoming a specialist in finding elegant solutions to complex challenges.  Whether it's wrangling massive datasets with Python and Pandas, crafting intricate ETL pipelines with Pentaho, or visualizing data insights with Microstrategy, I thrive on the challenge of transforming raw data into actionable knowledge.
+
+
+> [!WARNING]
+> Warning: This operation will delete all data.
 
 
 ## Dublin - A New Chapter

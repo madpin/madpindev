@@ -43,5 +43,5 @@ docker run --rm \
     -u 1002:1002 \
     -p 1313:1313 \
     ${HUGO_IMAGE} \
-    server
+    server --disableFastRender --buildDrafts
 

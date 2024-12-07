@@ -1,6 +1,6 @@
 ---
 layout:     post 
-showtoc: true
+showtoc:    true
 title:      "Taming the Python Beast: A Practical Guide to Script Organization"
 subtitle:   "From Jungle to Garden: Simple Tricks for Managing Python Projects Without the Complexity"
 date:       2024-12-05
