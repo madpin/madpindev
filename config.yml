@@ -1,0 +1,97 @@
+baseurl: https://madpin.dev
+title: Thiago MadPin's Blog
+theme: hugo-theme-cleanwhite
+
+languageCode: en-us
+disqusShortname: ""
+googleAnalytics: ""
+
+preserveTaxonomyNames: true
+hasCJKLanguage: true
+paginate: 10
+
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - Algolia
+params:
+  header_image: img/bg/Designer.jpeg
+  SEOTitle: Thiago MadPin Blog's
+
+  description: Thiago MadPin, coder, problem solver, open source lover,
+    photographer when possible
+  keyword: madpin, python, pandas, script, cv
+  slogan: From São Paulo to the world
+  upstreamAttribution: false
+  image_404: img/404-bg.jpg
+  title_404: Sorry, we got confuse, you or me :(
+  omit_categories: false
+  page_view_counter: false
+  leancloud_app_id: ""
+  leancloud_app_key: ""
+  algolia_search: true
+  algolia_appId: ""
+  algolia_indexName: ""
+  algolia_apiKey: ""
+  sidebar_about_description: Software Developer, Open Source Enthusiast and wannabe photographer
+  sidebar_avatar: img/madpin-buildings-small300.jpg
+  featured_tags: true
+  featured_condition_size: 0
+  ba_track_id: ""
+  disqus_proxy: ""
+  disqus_site: ""
+  twikoo_env_id: ""
+  artalk_enable: false
+  artalk_server: https://xxx.xxx.com
+  artalk_site: xxx blog
+  reward: false
+  friends: false
+  bookmarks: true
+  about_me: true
+  social:
+    rss: true
+    email: madpin@gmail.com
+    linkedin: https://www.linkedin.com/in/thiagomadpin/
+    stackoverflow: https://stackoverflow.com/users/1413318
+    instagram: https://www.instagram.com/thiagomadpin/
+    github: https://github.com/madpin
+    gitlab: https://gitlab.com/madpin
+  bookmark_link:
+    - title: hckrnews
+      href: https://hckrnews.com/
+    - title: Indeed
+      href: http://indeed.com
+    - title: lobechat
+      href: http://github.com/lobehub/lobe-chat/
+  addtional_menus:
+    - title: ARCHIVE
+      href: /archive/
+    - title: NOTES
+      href: /notes/
+    - title: ABOUT
+      href: /about/
+  algolia:
+    vars:
+      - title
+      - summary
+      - date
+      - publishdate
+      - expirydate
+      - permalink
+    params:
+      - categories
+      - tags
+outputFormats:
+  Algolia:
+    baseName: algolia
+    isPlainText: true
+    mediaType: application/json
+    notAlternative: true
+markup:
+  tableOfContents:
+    endLevel: 2
+    startLevel: 1
+  highlight:
+    style: dracula
