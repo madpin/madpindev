@@ -6,7 +6,7 @@ subtitle:   "An innovative system for renting in Dublin without headaches"
 date:       2024-12-08
 author:     "Thiago MadPin"
 URL:        "/2024/12/08-finding-your-dream-home-in-dublin-a-systematic-approach/"
-image:      "/img/posts/2024-12-08-finding-your-dream-home-in-dublin-a-systematic-approach.webp"
+image:      "/img/posts/2024-12-08-finding-your-dream-home-in-dublin-a-systematic-approach2.png"
 description: "Discover a new system to streamline your Dublin house-hunting using transport times, picture ratings, and proximity to amenities."
 categories: [ Tech ]
 tags:
