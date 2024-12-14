@@ -1,6 +1,6 @@
 ---
 layout:     post 
-draft:      true
+draft:      false
 title:      "Finding Your Dream Home in Dublin: A Systematic Approach"
 subtitle:   "An innovative system for renting in Dublin without headaches"
 date:       2024-12-08
