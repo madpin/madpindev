@@ -4,7 +4,7 @@ theme: ["hugo-admonitions", "hugo-theme-cleanwhite"]
 
 languageCode: en-us
 disqusShortname: ""
-googleAnalytics: ""
+googleAnalytics: "G-2TXP62TY1V"
 plantuml: true
 
 preserveTaxonomyNames: true
