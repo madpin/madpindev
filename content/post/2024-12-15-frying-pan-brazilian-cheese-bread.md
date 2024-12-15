@@ -6,13 +6,16 @@ subtitle:   "Quick and Easy Pao de Queijo in the Frying pan"
 date:       2024-12-15
 author:     "Thiago MadPin"
 URL:        "/2024/12/15-frying-pan-brazilian-cheese-bread/"
-image:      "static/img/post/2024-12-15-frying-pan-brazilian-cheese-bread.png"
+image:      "/img/posts/2024-12-15-frying-pan-brazilian-cheese-bread.png"
+description: "A quick and easy Brazilian cheese bread recipe made in a frying pan instead of the traditional oven-baked method. This recipe combines tapioca flour with parmesan and mozzarella cheese to create a delicious, gluten-free bread that's crispy on the outside and chewy on the inside. Perfect for breakfast or as a snack, this simplified version takes only 16 minutes to prepare and cook, making it an accessible way to enjoy this Brazilian favorite at home."
 categories: [ Recipes ]
 tags:
-    - 
+    - food
+    - cheese
 ---
 
-## Pão de Queijo de Frigideira de Tapioca (Tapioca Skillet Cheese Bread)
+A quick and easy Brazilian cheese bread recipe made in a frying pan instead of the traditional oven-baked method. This recipe combines tapioca flour with parmesan and mozzarella cheese to create a delicious, gluten-free bread that's crispy on the outside and chewy on the inside. Perfect for breakfast or as a snack, this simplified version takes only 16 minutes to prepare and cook, making it an accessible way to enjoy this Brazilian favorite at home.
+
 
 **Overview**
 - Preparation Time: 8 minutes
@@ -58,7 +61,7 @@ tags:
 
 **Recipe Meta**
 - Tags: Cheese Bread, Tapioca, Skillet, Brazilian, Breakfast, Snack
-- Source: Natalia Nunes
+- Source: [Natalia Nunes](https://www.tudogostoso.com.br/receita/175982-pao-de-queijo-de-frigideira-de-tapioca.html)
 - Date Added: 2023-11-27
 
 **Please Note:**
