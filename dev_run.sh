@@ -23,6 +23,7 @@ HUGO_IMAGE="hugomods/hugo:exts-non-root"
 cleanup() {
     echo -e "\nStopping Hugo server..."
     docker stop ${CONTAINER_NAME} 2>/dev/null || true
+    docker rm ${CONTAINER_NAME} 2>/dev/null || true
 }
 
 # Set up trap for cleanup on script exit
@@ -34,6 +35,9 @@ if ! docker info >/dev/null 2>&1; then
     exit 1
 fi
 
+# Remove existing container if it exists
+docker rm -f ${CONTAINER_NAME} 2>/dev/null || true
+
 # Run Hugo server in Docker
 echo "Starting Hugo development server..."
 docker run --rm \
@@ -44,4 +48,3 @@ docker run --rm \
     -p 1313:1313 \
     ${HUGO_IMAGE} \
     server --disableFastRender --buildDrafts
-

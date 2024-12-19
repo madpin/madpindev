@@ -86,7 +86,7 @@ URL="/${YEAR}/${MONTH}/${DAY}-${URL_TITLE}/"
 
 # Create posts directory if it doesn't exist
 POSTS_DIR="content/post"
-IMG_DIR="static/img/post"
+IMG_DIR="/img/posts"
 mkdir -p "$POSTS_DIR"
 
 # Create filename with date prefix
@@ -96,15 +96,16 @@ IMG_FILENAME="${IMG_DIR}/${TODAY}-${URL_TITLE}.jpg"
 # Create the post file
 cat > "$FILENAME" << EOF
 ---
-layout:     post 
-draft:      true
-title:      "${TITLE}"
-$([ -n "$SUBTITLE" ] && echo "subtitle:   \"${SUBTITLE}\"")
-date:       ${TODAY}
-author:     "${AUTHOR}"
-URL:        "${URL}"
-image:      "${IMG_FILENAME}"
-categories: [ Tech ]
+layout:      post 
+draft:       true
+title:       "${TITLE}"
+$([ -n "$SUBTITLE" ] && echo "subtitle:    \"${SUBTITLE}\"")
+date:        ${TODAY}
+author:      "${AUTHOR}"
+URL:         "${URL}"
+image:       "${IMG_FILENAME}"
+description: "${IMG_FILENAME}"
+categories:  [ Tech ]
 tags:
     - 
 ---
