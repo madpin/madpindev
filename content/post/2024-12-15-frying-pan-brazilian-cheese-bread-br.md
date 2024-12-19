@@ -2,13 +2,13 @@
 layout:     post 
 draft:      false
 unlisted:   true
-title:      "Frying Pan Brazilian Cheese Bread"
-subtitle:   "Quick and Easy Pao de Queijo in the Frying pan"
+title:      "Pão de Queijo de Frigideira"
+subtitle:   "Rápido e Fácil Pão de Queijo na Frigideira"
 date:       2024-12-15
 author:     "Thiago MadPin"
 URL:        "/2024/12/15-frying-pan-brazilian-cheese-bread-br/"
 image:      "/img/posts/2024-12-15-frying-pan-brazilian-cheese-bread.png"
-description: "A quick and easy Brazilian cheese bread recipe made in a frying pan instead of the traditional oven-baked method. This recipe combines tapioca flour with parmesan and mozzarella cheese to create a delicious, gluten-free bread that's crispy on the outside and chewy on the inside. Perfect for breakfast or as a snack, this simplified version takes only 16 minutes to prepare and cook, making it an accessible way to enjoy this Brazilian favorite at home."
+description: "Uma receita rápida e fácil de pão de queijo brasileiro feita em uma frigideira, em vez do método tradicional assado no forno. Esta receita combina farinha de tapioca com queijo parmesão e mussarela para criar um pão delicioso, sem glúten, que é crocante por fora e macio por dentro. Perfeito para o café da manhã ou como lanche, esta versão simplificada leva apenas 16 minutos para preparar e cozinhar, tornando-se uma maneira acessível de desfrutar deste favorito brasileiro em casa."
 categories: [ Recipes ]
 multilingual: true
 published: 2024-12-15
