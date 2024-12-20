@@ -1,6 +1,5 @@
 ---
 layout:      post 
-draft:       true
 title:       "The Magical Cheese Bread From Brazil: My Pão de Queijo Adventure"
 subtitle:    "A Brazilian's Quest for the Perfect Cheesy Bite in Dublin"
 date:        2024-12-16
@@ -8,16 +7,15 @@ author:      "Thiago MadPin"
 URL:         "/2024/12/16-the-magical-cheese-bread-from-brazil-my-po-de-queijo-adventure/"
 image:       "/img/posts/2024-12-16-the-magical-cheese-bread-from-brazil-my-po-de-queijo-adventure.png"
 description: "/img/posts/2024-12-16-the-magical-cheese-bread-from-brazil-my-po-de-queijo-adventure.jpg"
-categories:  [ Tech ]
-tags:
-    - test
+categories:  [ Recipes ]
+tags: [food, cheese]
 ---
 
-There's something truly magical about Pão de Queijo. It's more than just a cheese bread; it's a warm hug, a taste of home, a little piece of Brazilian sunshine that brightens even the dreariest Dublin day. As a Brazilian software engineer living in Ireland, finding authentic Pão de Queijo has been, let's say, an adventure. So, armed with my data science background, a dash of ADHD-fueled impulsiveness, and a whole lot of love for this cheesy delight, I embarked on a mission to create the perfect Pão de Queijo right here in my Dublin kitchen, using the real deal: polvilho azedo.
+There's something truly magical about Pão de Queijo. It's more than just a cheese bread; it's a warm hug, a taste of home, a little piece of Brazilian sunshine that brightens even the dreariest Dublin day. As a Brazilian software engineer living in Ireland, finding authentic Pão de Queijo has been, let's say, an adventure. So, armed with my data science background, a whole lot of love for this cheesy delight, I embarked on a mission to create the perfect Pão de Queijo right here in my Dublin kitchen, using the real deal: polvilho azedo.
 
 ## The Quest for Ingredients
 
-Back in Brazil, making Pão de Queijo is almost a reflex. You pop into any *padaria*, and there they are, golden and inviting. But here in Dublin, it's a different story. Finding the right ingredients, especially *polvilho azedo* (sour tapioca flour), requires a bit of detective work. Luckily, some international shops around here stock Brazilian products. It took hopping between a couple of shops and a few online attempts. Oh, and they also had *polvilho doce* (sweet tapioca flour), which I decided to pick up, to see what would happen if I mixed both.
+Back in Brazil, eating Pão de Queijo is almost a reflex. You pop into any *padaria*, and there they are, golden and inviting. But here in Dublin, it's a different story. Finding the right ingredients, especially *polvilho azedo* (sour tapioca flour), requires a bit of detective work. Luckily, some international shops around here stock Brazilian products. It took hopping between a couple of shops and a few online attempts. Oh, and they also had *polvilho doce* (sweet tapioca flour), which I decided to pick up, to see what would happen if I mixed both.
 
 > [!IDEA] Summary
 > Pão de Queijo is a beloved Brazilian cheese bread made with tapioca flour. The sour variety, *polvilho azedo*, is key to its unique texture, but a mix of sour and sweet (*polvilho doce*) can also be used for a balanced result. Finding these ingredients outside Brazil can be a challenge, but it's part of the fun!
@@ -28,24 +26,27 @@ Now, making  Pão de Queijo isn't rocket science, but it does involve a bit of c
 
 But don't worry, I've done the heavy lifting for you. Here's the adjusted recipe, designed to make your Pão de Queijo journey as smooth as *manteiga* (butter):
 
-## The Perfect Pão de Queijo Recipe (with 400g Polvilho Azedo & 100g Polvilho Doce)
+## The Perfect Pão de Queijo Recipe (with 500g Polvilho Azedo & 100g Polvilho Doce)
 
 ### Ingredients
 
-| Ingredient        | Measurement            |
-| ----------------- | ---------------------- |
-| Polvilho Azedo    | 400g                   |
-| Polvilho Doce     | 100g                   |
-| Whole Milk        | 400ml                  |
-| Cheese (Parmesan) | 200g                  |
-| Eggs              | 2 large               |
-| Butter            | 100g                  |
-| Salt              | 10g                    |
-| Sugar             | 20g                    |
+| Ingredient         | Standard Measurement | Percentage |
+| :----------------- | :------------------- | :--------- |
+| Polvilho Azedo     | 500 g                | 26.4%      |
+| Polvilho Doce      | 214.29 g             | 11.3%      |
+| Salt               | 7.143 g              | 0.4%       |
+| Vegetable Oil      | 107.145 g            | 5.7%       |
+| Milk               | 428.58 g             | 22.6%      |
+| Egg                | 136.997 g            | 7.2%       |
+| Canastra Meia Cura | 428.58 g             | 22.6%      |
+| Parmesan Cheese    | 71.43 g              | 3.8%       |
 
+
+> [!ATTENTION]
+> I've replaced the original "Canastra Meia Cura" with a mix half and half between cheedar cheese light and mozzarella cheese.
 ### Method
 
-1. **Preheat & Prep:** First things first, preheat your oven to a toasty 220°C (425°F). While that's warming up, grab a baking sheet and line it with parchment paper. My ADHD brain loves these little prep steps; it's like setting the stage for a delicious performance, trust me. Another great thing: I won't need to grease the pan!
+1. **Preheat & Prep:** First things first, preheat your oven to a toasty 210°C. While that's warming up, grab a baking sheet and line it with parchment paper. My ADHD brain loves these little prep steps; it's like setting the stage for a delicious performance, trust me. Another great thing: I won't need to grease the pan!
 
 2. **Cheese Grating:** Finely grate your Parmesan cheese. I find that grating cheese is oddly therapeutic, don't you agree? A little bit of manual work to get you in the cooking mood, much better than writing code to do such a simple task.
 
@@ -54,7 +55,7 @@ But don't worry, I've done the heavy lifting for you. Here's the adjusted recipe
 
 3. **Warm Milk & Butter:** In a small saucepan, combine the milk and butter. Heat them gently over medium heat until the butter is completely melted, and the mixture is warm to the touch, around 40-45°C (104-113°F). Don't let it boil, though - we're aiming for warm, not scorching. It is very important to stir constantly to avoid burning the milk.
 
-4. **Dry Ingredients:** In a large bowl, whisk together the polvilho azedo, polvilho doce, sugar, and salt. This is where the magic begins! A little tip, when I don't have a whisk on hand, I use a fork. Works like a charm. Then, of course, you realize that was not such a great choice after all, because the polvilho got stuck between the little fork teeth, and you spend a few minutes getting it out, using another kitchen utensil. Fun!
+4. **Dry Ingredients:** (not the cheeses) In a large bowl, whisk together the polvilho azedo, polvilho doce, sugar, and salt. This is where the magic begins! A little tip, when I don't have a whisk on hand, I use a fork. Works like a charm. Then, of course, you realize that was not such a great choice after all, because the polvilho got stuck between the little fork teeth, and you spend a few minutes getting it out, using another kitchen utensil. Fun!
 
 5. **Combine Wet & Dry:** Make a little well in the center of your dry ingredients. Pour in the warm milk and butter mixture, along with the eggs. Now, gently mix everything together. Don't overmix; a few lumps are perfectly fine. This dough is quite forgiving.
 
@@ -71,8 +72,7 @@ But don't worry, I've done the heavy lifting for you. Here's the adjusted recipe
 
 ## From Dublin with Love (and Cheese)
 
-Making Pão de Queijo here in Dublin has been a journey of rediscovering my roots, embracing my quirks, and finding joy in the little things. It's a reminder that even when you're far from home, you can always find a piece of it in the food you create (and the food you eat). Plus, sharing these cheesy delights with friends, both old and new, is a fantastic way to connect and spread a little Brazilian *alegria* (joy).
+Now a bit of a cheese moment, making Pão de Queijo here in Dublin has been a journey of rediscovering my roots, embracing my quirks, and finding joy in the little things. It's a reminder that even when you're far from home, you can always find a piece of it in the food you create (and the food you eat). Plus, sharing these cheesy delights with friends, both old and new, is a fantastic way to connect and spread a little Brazilian *alegria* (joy).
 
 So, there you have it, my Pão de Queijo adventure. I hope this inspires you to try making your own, whether you're a seasoned baker, a fellow Brazilian missing home, or simply someone who loves cheese (and who doesn't?). And remember, even if your first batch isn't perfect, embrace the process.
 As we say in Brazil, "*errando é que se aprende*" - it is by making mistakes that one learns. Keep trying, keep experimenting, and most importantly, keep enjoying the delicious journey!
-

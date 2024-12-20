@@ -11,7 +11,7 @@ date:        2024-12-19
 URL:         "/2024/12/19-vps-first-setup/"
 image:       "/img/posts/2024-12-19-vps-first-setup.jpg"
 categories:  [ Tech ]
-tags: [VPS, Linux, Docker, SSH, Ubuntu, VPS Setup, Cloud, Free]
+tags: [vps, linux, docker, ssh, ubuntu, vps setup, cloud, free]
 ---
 
 So, I did it again. I set up another VPS. You know, that feeling when you get a new digital toy? It's like Christmas morning, except instead of unwrapping presents, you're staring at a blinking cursor, ready to type in commands that seem like ancient incantations. This time, it was an Oracle Cloud ARM-based instance, and the best part? It's free! That's right, Oracle's "Always Free" tier is like finding a twenty in your old jeans, except this twenty keeps giving. Let me walk you through how I turned this blank slate into a secure, Docker-ready playground, all from my cozy little corner in Dublin.
