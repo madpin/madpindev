@@ -94,19 +94,22 @@ Pour the whole milk and vegetable oil (or butter) into a saucepan on medium-low 
 
 ### Step 4: Add Eggs for Binding 
 
-Once slightly cooled, gradually add eggs one at a time to the dough, ensuring each egg is completely integrated. The dough will become smoother and glossy.
+Wait a few minutes, once slightly cooled, gradually add eggs one at a time to the dough, ensuring each egg is completely integrated. The dough will become smoother and glossy.
 
 ### Step 5: Cheese Time!
 
 Fold in grated cheeses until fully distributed, creating a dough that's cohesive yet slightly sticky.
 
-### Step 6: Shaping & Baking
+### Step 6: Shaping, Baking & Freezing Tips
 
-With lightly greased hands or a small scoop, portion the dough into golf-ball-sized (~30g) rounds. Place your shaped rolls neatly spaced on your parchment-lined trays. Bake immediately in the preheated oven (200°C) for approximately 25–30 minutes, until the Pão de Queijo is puffed, golden, and aromatic.
+With lightly greased hands (or not, your choice) or using a small scoop, shape the dough into golf-ball-sized rounds (~25g each). Arrange them neatly onto parchment-lined baking trays, keeping sufficient space between each ball for them to puff up. Bake immediately in your preheated oven (200°C) for 25–30 minutes, until they turn beautifully golden, puffed up, and irresistibly aromatic.
 
-### Step 7: Enjoy Immediately (It's Science!)
+> [!TIP]
+> Planning ahead? Freeze uncooked shaped dough balls on a baking tray until solid, then transfer them to zip-lock bags or airtight containers for easy future baking. They can be baked directly from frozen—simply add an extra 5–7 minutes to the baking time.
 
-Let them cool briefly—but not too long! Pão de Queijo tastes best fresh from the oven, as cooling causes starches to stabilize, slowly losing elasticity and chewiness. Enjoy while warm!
+### Step 7: Enjoy Freshly Baked (It's Science!)
+
+Once baked, allow your Pão de Queijo to cool briefly—but only just enough so you don't burn your fingers! They're at their absolute best straight from the oven because starch molecules start stabilizing as they cool, causing the bread to gradually lose its unique stretchiness and chewiness. If you're freezing batches for later, I strongly recommend always baking a few fresh to fully experience their iconic texture and flavor right away!
 
 > [!NOTIFY]
 > Leftovers? Store extras in an airtight container and warm up briefly in the oven before serving.
