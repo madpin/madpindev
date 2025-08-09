@@ -1,0 +1,52 @@
+/* Custom navigation overrides for Tools dropdown */
+.navbar-nav > li.dropdown > a {
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.navbar-nav > li.dropdown.open > a,
+.navbar-nav > li.dropdown > a:focus,
+.navbar-nav > li.dropdown > a:hover {
+  background: #110800;
+  color: #fff !important;
+}
+
+.navbar-nav > li.dropdown .dropdown-menu {
+  background: #110800;
+  border: 1px solid #2b1f19;
+  border-radius: 0 0 6px 6px;
+  padding: 6px 0;
+  min-width: 180px;
+}
+
+.navbar-nav > li.dropdown .dropdown-menu > li > a {
+  color: #ddd;
+  font-weight: 500;
+  padding: 6px 18px;
+  text-transform: none;
+  letter-spacing: .03em;
+}
+
+.navbar-nav > li.dropdown .dropdown-menu > li > a:hover,
+.navbar-nav > li.dropdown .dropdown-menu > li > a:focus {
+  background: #1e140f;
+  color: #fff;
+}
+
+/* Caret color */
+.navbar-nav > li.dropdown > a .caret { border-top-color: #666; }
+.navbar-nav > li.dropdown.open > a .caret,
+.navbar-nav > li.dropdown > a:hover .caret { border-top-color: #fff; }
+
+.navbar-nav > li.dropdown.open { background: #110800; }
+
+@media (max-width: 767px) {
+  .navbar-nav > li.dropdown .dropdown-menu {
+    background: #110800;
+    position: static;
+    float: none;
+    box-shadow: none;
+    border: none;
+  }
+  .navbar-nav > li.dropdown .dropdown-menu > li > a { padding-left: 30px; }
+}

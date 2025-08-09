@@ -74,6 +74,12 @@ params:
       href: /notes/
     - title: ABOUT
       href: /about/
+    - title: TOOLS
+      children:
+        - title: ADHD TEST
+          href: /adhd-assessment/
+  custom_css:
+    - css/nav-overrides.css
   algolia:
     vars:
       - title
@@ -97,3 +103,6 @@ markup:
     startLevel: 1
   highlight:
     style: dracula
+  goldmark:
+    renderer:
+      unsafe: true
