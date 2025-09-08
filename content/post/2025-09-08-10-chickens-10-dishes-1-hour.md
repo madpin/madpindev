@@ -20,7 +20,7 @@ tags:
 Chef Kush turns 10 whole chickens into a global feast in about an hour by stacking smart shortcuts, pantry boosters, and parallel cooking. This guide distills the video into easy tables, short how-tos, and practical tips you can use at home with 1–2 chickens.
 
 <div class="heart-note" style="background: #fff5f5; border-left: 4px solid #ff69b4; padding: 1rem; margin: 1rem 0; border-radius: 8px;">
-💖 **A special note for my favorite sous-chef** 💖<br>
+💖 **A special note for Rachel, my favorite sous-chef** 💖<br>
 Hey love, this one's for you - your chicken game is about to level up! Can't wait to cook this together and turn our kitchen into a global feast. Love you lots! 😘
 </div>
 
@@ -39,11 +39,11 @@ Yes, you read that right! I'm that dedicated boyfriend who spends hours research
 - 👨‍🍳 **Adult life**: Became the ultimate research partner for cooking adventures
 - 📝 **Now**: Writing detailed guides about chicken while my plate has... well, *not* chicken
 
-**Why I love helping with chicken recipes anyway:**
-- 💕 **The dedication**: Nothing says "I love you" like becoming your personal chicken research assistant
-- 📊 **The data**: I live for organizing techniques, timing, and flavor combinations
-- 👥 **The teamwork**: Watching someone you love enjoy a meal you helped create together
-- 🌍 **The exploration**: Each recipe is a new culinary adventure we can tackle as a team
+**Why I love helping Rachel with chicken recipes anyway:**
+- 💕 **The dedication**: Nothing says "I love you, Rachel" like becoming your personal chicken research assistant
+- 📊 **The data**: I live for organizing techniques, timing, and flavor combinations for our kitchen adventures
+- 👥 **The teamwork**: Watching Rachel enjoy a meal we created together is the best reward
+- 🌍 **The exploration**: Each recipe is a new culinary adventure we tackle as a team
 
 **Pro tip for fellow supportive partners:** You don't have to love eating something to become its biggest advocate. Sometimes the best recipes come from people who are obsessed with helping others enjoy amazing food!
 
