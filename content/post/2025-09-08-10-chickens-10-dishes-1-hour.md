@@ -20,7 +20,7 @@ tags:
 Chef Kush turns 10 whole chickens into a global feast in about an hour by stacking smart shortcuts, pantry boosters, and parallel cooking. This guide distills the video into easy tables, short how-tos, and practical tips you can use at home with 1–2 chickens.
 
 <div class="heart-note" style="background: #fff5f5; border-left: 4px solid #ff69b4; padding: 1rem; margin: 1rem 0; border-radius: 8px;">
-💖 **A special note for Rachel, my favorite sous-chef** 💖<br>
+💖 **A special note for Rachel, my favorite chef** 💖<br>
 Hey love, this one's for you - your chicken game is about to level up! Can't wait to cook this together and turn our kitchen into a global feast. Love you lots! 😘
 </div>
 
