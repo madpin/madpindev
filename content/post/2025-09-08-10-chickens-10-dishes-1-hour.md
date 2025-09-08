@@ -6,8 +6,8 @@ subtitle:    "your accessible guide with quick recipes, tips, and time‑saving 
 date:        2025-09-08
 author:      "Thiago MadPin"
 URL:         "/2025/09/08-10-chickens-10-dishes-1-hour/"
-image:       "/img/posts/2025-09-08-10-chickens-10-dishes-1-hour.jpg"
-description: "/img/posts/2025-09-08-10-chickens-10-dishes-1-hour.jpg"
+image:       "/img/posts/2025-09-08-10-chickens-10-dishes-1-hour.png"
+description: "Chef Kush turns 10 whole chickens into a global feast in about an hour by stacking smart shortcuts, pantry boosters, and parallel cooking. This guide distills the video into easy tables, short how-tos, and practical tips you can use at home with 1–2 chickens."
 categories:  [ Tech ]
 tags:
     - 
