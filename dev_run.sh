@@ -115,7 +115,7 @@ log "Removing existing container if it exists..."
 docker rm -f ${CONTAINER_NAME} 2>/dev/null || true
 
 # Build Hugo server command
-HUGO_COMMAND="server --disableFastRender --cleanDestinationDir"
+HUGO_COMMAND="server --cleanDestinationDir"
 if [[ "$BUILD_DRAFTS" == true ]]; then
     HUGO_COMMAND+=" --buildDrafts"
 fi
