@@ -78,6 +78,8 @@ params:
       children:
         - title: ADHD TEST
           href: /adhd-assessment/
+        - title: ACLS Notes
+          href: /pages/acls-notes/
   custom_css:
     - css/nav-overrides.css
   algolia:
