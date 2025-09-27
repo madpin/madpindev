@@ -10,10 +10,10 @@ Personal blog built with Hugo static site generator using Clean White theme.
 
 ### Running Locally with Docker
 
-1. Clone this repository (if using Git):
+1. Clone this repository with submodules:
 ```bash
-git clone <your-repo-url>
-cd <repo-directory>
+git clone --recurse-submodules git@github.com:madpin/madpindev.git
+cd madpindev
 ```
 
 2. Start the Hugo server using Docker:
@@ -29,6 +29,39 @@ server && docker stop madpindev
 ```
 
 3. View your site at: http://localhost:1313
+
+### Alternative: Using the Development Script
+
+For a more convenient development experience, you can use the included `dev_run.sh` script:
+
+```bash
+./dev_run.sh
+```
+
+This script provides additional features and options:
+- Graceful shutdown with proper container cleanup
+- Customizable via command-line arguments
+- Support for multiple Hugo options (drafts, minify, themes, etc.)
+
+To see all available options:
+```bash
+./dev_run.sh --help
+```
+
+Common usage examples:
+```bash
+# Run with default settings
+./dev_run.sh
+
+# Run on a different port
+./dev_run.sh --port 8080
+
+# Run without building drafts
+./dev_run.sh --no-drafts
+
+# Run with minification enabled
+./dev_run.sh --minify
+```
 
 ### Docker Command Explanation
 - `--rm`: Automatically remove container when it exits
