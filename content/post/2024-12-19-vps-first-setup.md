@@ -5,7 +5,7 @@ title:      "VPS: My Oracle Cloud ARM Server Setup - It's Free Real Estate!"
 subtitle:   "From 'Ubuntu' to 'MadPin': How I Secured My Free Oracle Cloud VPS and Lived to Tell the Tale"
 description: "Join me, Thiago, on a humorous and insightful journey as I set up my free Oracle Cloud ARM instance. We'll tackle user management, security hardening, Docker, and more, all while keeping our sanity (mostly) intact. Plus, discover why Oracle's offering beats the pants off oversold VPS providers!"
 image_description: "A humorous illustration of a computer server wearing a superhero cape, with the Oracle logo subtly embedded in the background, symbolizing a powerful and free VPS setup."
-tags:       [VPS, Oracle Cloud, ARM, Linux, Security, Docker, SSH, Ubuntu, Server Setup, Cloud Computing, Free Tier, Fail2Ban, Zsh, Powerlevel10k]
+# tags:       [VPS, Oracle Cloud, ARM, Linux, Security, Docker, SSH, Ubuntu, Server Setup, Cloud Computing, Free Tier, Fail2Ban, Zsh, Powerlevel10k]
 author:     "Thiago MadPin"
 date:        2024-12-19
 URL:         "/2024/12/19-vps-first-setup/"
