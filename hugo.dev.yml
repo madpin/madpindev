@@ -1,0 +1,5 @@
+# Development configuration override
+# This file extends hugo.yml for local development
+
+baseurl: http://localhost:1313
+

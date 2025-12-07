@@ -4,6 +4,9 @@
 /assets/jsconfig.json
 hugo_stats.json
 
+# Hugo development config (optional - can be committed if you want)
+# hugo.dev.yml
+
 # Executable may be added to repository
 hugo.exe
 hugo.darwin
