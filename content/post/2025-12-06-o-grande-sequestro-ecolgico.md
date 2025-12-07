@@ -1,6 +1,6 @@
 ---
 layout: post
-draft: true
+draft: false
 title: "O Grande Sequestro Ecológico"
 subtitle: "Como Corporações Transformaram Sabedoria Ancestral em Culpa Individual"
 date: 2025-12-06
