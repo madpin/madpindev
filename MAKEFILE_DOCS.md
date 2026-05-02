@@ -105,3 +105,9 @@ This Makefile replaces the following shell scripts:
 - `deploy.sh` → `make deploy`
 - `build_algolia_index.sh` → `make algolia`
 
+
+
+
+
+
+
