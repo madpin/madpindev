@@ -33,5 +33,17 @@ Thumbs.db
 # Node modules if using any npm packages
 node_modules/
 
+# Build and test artifacts
+dist/
+.tmp/
+coverage/
+playwright-report/
+test-results/
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+
 # Local Netlify folder
 .netlify

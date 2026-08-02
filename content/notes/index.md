@@ -1,8 +1,9 @@
 ---
-layout: page
+title: Notes
+description: Working notes and shorter technical references.
+noindex: true
+build:
+  list: never
 ---
 
-## [Go 语言学习笔记](https://zhaohuabing.com/learning-golang)
-
-## [Envoy 学习笔记](https://zhaohuabing.com/learning-envoy) 
-
+Longer-form working notes and technical references will be published here.

@@ -1,0 +1,10 @@
+{{ define "hero" }}
+<header class="hero hero-404">
+  <div class="hero-media" aria-hidden="true"><img src="{{ site.Params.image404 | relURL }}" alt=""></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content"><h1>404</h1><p class="hero-subtitle">{{ i18n "notFound" }}</p></div>
+</header>
+{{ end }}
+{{ define "main" }}
+  <div class="page-shell not-found"><p>{{ i18n "notFoundHelp" }}</p><a class="button-link" href="{{ site.Home.RelPermalink }}">{{ i18n "backHome" }}</a></div>
+{{ end }}

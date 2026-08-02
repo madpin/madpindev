@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <div class="page-shell">
+    {{ with .Content }}<div class="prose section-intro">{{ . }}</div>{{ end }}
+    <section class="post-list" aria-label="{{ .Title }}" data-pagefind-ignore="all">
+      {{ $pages := where .RegularPages "Params.unlisted" "ne" true }}
+      {{ $paginator := .Paginate $pages }}
+      {{ range $paginator.Pages }}{{ partial "post-card.html" . }}{{ end }}
+      {{ partial "pagination.html" . }}
+    </section>
+  </div>
+{{ end }}

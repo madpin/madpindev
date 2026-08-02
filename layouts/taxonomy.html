@@ -1,0 +1,10 @@
+{{ define "main" }}
+  <div class="page-shell">
+    {{ with .Content }}<div class="prose section-intro">{{ . }}</div>{{ end }}
+    <ul class="term-list" data-pagefind-ignore="all">
+      {{ range .Data.Terms.ByCount }}
+        <li><a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a><span>{{ .Count }}</span></li>
+      {{ end }}
+    </ul>
+  </div>
+{{ end }}

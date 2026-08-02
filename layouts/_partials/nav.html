@@ -1,0 +1,27 @@
+<nav class="site-nav" aria-label="{{ i18n "primaryNavigation" }}">
+  <div class="nav-inner">
+    <a class="site-brand" href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+      <span class="nav-toggle-label">{{ i18n "menu" }}</span>
+      <span aria-hidden="true">☰</span>
+    </button>
+    <div class="nav-menu" id="primary-menu">
+      <a href="{{ site.Home.RelPermalink }}">{{ i18n "allPosts" }}</a>
+      <a href="{{ "/archive/" | relLangURL }}">{{ i18n "archive" }}</a>
+      <a href="{{ "/about/" | relLangURL }}">{{ i18n "about" }}</a>
+      <details class="nav-dropdown">
+        <summary>{{ i18n "tools" }}</summary>
+        <div class="nav-dropdown-menu">
+          <a href="{{ "/adhd-assessment/" | relURL }}">{{ i18n "adhdDemo" }}</a>
+          <a href="{{ "/pages/acls-notes/" | relURL }}">{{ i18n "aclsNotes" }}</a>
+        </div>
+      </details>
+      <a href="{{ "/search/" | relLangURL }}">{{ i18n "search" }}</a>
+      {{ if gt (len .AllTranslations) 1 }}
+        <span class="language-links" role="group" aria-label="{{ i18n "languages" }}">
+          {{ range .AllTranslations }}<a href="{{ .RelPermalink }}" hreflang="{{ .Language.Locale }}" lang="{{ .Language.Locale }}"{{ if eq .Language.Lang site.Language.Lang }} aria-current="page"{{ end }}>{{ .Language.Label }}</a>{{ end }}
+        </span>
+      {{ end }}
+    </div>
+  </div>
+</nav>

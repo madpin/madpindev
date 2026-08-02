@@ -1,0 +1,147 @@
+{{ define "page_styles" }}
+{{- $style := resources.Get "css/tools/adhd.css" | minify | fingerprint "sha384" -}}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+{{ end }}
+
+{{ define "main" }}
+<div id="adhd-assessment" class="adhd-tool" data-adhd-tool data-state="idle">
+  <section class="adhd-tool__screen" data-screen="start" aria-labelledby="adhd-start-title">
+    <header class="adhd-tool__header">
+      <p class="adhd-tool__eyebrow">Interactive attention task</p>
+      <h1 id="adhd-start-title" tabindex="-1">{{ .Title }}</h1>
+      <p>This browser-based task demonstrates one kind of sustained-attention exercise.</p>
+    </header>
+
+    <aside class="adhd-tool__notice" aria-labelledby="adhd-notice-title">
+      <h2 id="adhd-notice-title">Demonstration only</h2>
+      <p>This is not a medical test, screening tool, or diagnosis of ADHD. Performance can be affected by your device, environment, and many other factors. Do not use these results to make health decisions.</p>
+    </aside>
+
+    <form class="adhd-tool__settings" data-settings-form>
+      <fieldset>
+        <legend>Task settings</legend>
+        <div class="adhd-tool__field-grid">
+          <div class="adhd-tool__field">
+            <label for="adhd-test-duration">Duration</label>
+            <select id="adhd-test-duration" data-duration-input>
+              <option value="60">1 minute</option>
+              <option value="180" selected>3 minutes</option>
+              <option value="300">5 minutes</option>
+              <option value="600">10 minutes</option>
+            </select>
+          </div>
+          <div class="adhd-tool__field">
+            <label for="adhd-stimulus-duration">Stimulus display time</label>
+            <select id="adhd-stimulus-duration" data-stimulus-duration-input>
+              <option value="2000">2 seconds — easier</option>
+              <option value="1500" selected>1.5 seconds — standard</option>
+              <option value="1000">1 second — harder</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <section class="adhd-tool__instructions" aria-labelledby="adhd-instructions-title">
+        <h2 id="adhd-instructions-title">How it works</h2>
+        <ol>
+          <li>Watch the sequence of colored shapes.</li>
+          <li>Choose <strong>Same — respond</strong> only when both the shape and color are identical to the immediately preceding item.</li>
+          <li>Do not respond when either the shape or color changes.</li>
+          <li>You can tap or click the response button. Space or Enter also responds when focus is not on another control.</li>
+        </ol>
+        <p>Pause and stop controls remain available throughout the task. Escape also stops the task.</p>
+      </section>
+
+      <p class="adhd-tool__status" data-start-status role="status" aria-live="polite" aria-atomic="true">Choose settings, then start when you are ready.</p>
+
+      <div class="adhd-tool__actions">
+        <button class="adhd-tool__button adhd-tool__button--primary" type="submit" data-action="start">Start task</button>
+        <button class="adhd-tool__button adhd-tool__button--secondary" type="button" data-action="demo">View example results</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="adhd-tool__screen adhd-tool__test" data-screen="test" aria-labelledby="adhd-test-title" hidden>
+    <header class="adhd-tool__header adhd-tool__header--compact">
+      <p class="adhd-tool__eyebrow">Task in progress</p>
+      <h1 id="adhd-test-title" tabindex="-1">Match the current item</h1>
+      <p id="adhd-test-instructions">Respond only when its shape and color both match the preceding item.</p>
+    </header>
+
+    <div class="adhd-tool__progress-copy">
+      <span id="adhd-progress-label">Active task progress</span>
+      <output data-time-remaining>3:00 remaining</output>
+    </div>
+    <progress class="adhd-tool__progress" data-progress max="100" value="0" aria-labelledby="adhd-progress-label" aria-valuetext="3 minutes remaining">0%</progress>
+
+    <p class="adhd-tool__status" data-test-status role="status" aria-live="polite" aria-atomic="true">Get ready.</p>
+    <span class="adhd-tool__sr-only" data-stimulus-live aria-live="assertive" aria-atomic="true"></span>
+
+    <div class="adhd-tool__stage" data-stage role="group" aria-label="Stimulus display">
+      <div class="adhd-tool__stimulus" data-stimulus role="img" hidden></div>
+      <p class="adhd-tool__paused-label" data-paused-label hidden>Paused</p>
+    </div>
+
+    <button class="adhd-tool__button adhd-tool__button--response" type="button" data-action="response" aria-describedby="adhd-test-instructions" aria-keyshortcuts="Space Enter" aria-disabled="true">Same — respond</button>
+
+    <div class="adhd-tool__test-controls" role="group" aria-label="Task controls">
+      <button class="adhd-tool__button adhd-tool__button--secondary" type="button" data-action="pause" aria-pressed="false">Pause</button>
+      <button class="adhd-tool__button adhd-tool__button--danger" type="button" data-action="stop" aria-keyshortcuts="Escape">Stop and view results</button>
+    </div>
+  </section>
+
+  <section class="adhd-tool__screen" data-screen="results" aria-labelledby="adhd-results-title" hidden>
+    <header class="adhd-tool__header">
+      <p class="adhd-tool__eyebrow">Demonstration summary</p>
+      <h1 id="adhd-results-title" tabindex="-1">Task results</h1>
+      <p data-results-summary>These results describe this task session only.</p>
+    </header>
+
+    <aside class="adhd-tool__notice" aria-label="Results disclaimer">
+      <p><strong>These results cannot diagnose or rule out ADHD.</strong> Only a qualified healthcare professional can assess ADHD using appropriate clinical information.</p>
+    </aside>
+
+    <section aria-labelledby="adhd-metrics-title">
+      <h2 id="adhd-metrics-title" class="adhd-tool__sr-only">Performance metrics</h2>
+      <dl class="adhd-tool__metrics">
+        <div class="adhd-tool__metric">
+          <dt>Missed targets</dt>
+          <dd data-metric="omissionErrors">0</dd>
+        </div>
+        <div class="adhd-tool__metric">
+          <dt>False alarms</dt>
+          <dd data-metric="commissionErrors">0</dd>
+        </div>
+        <div class="adhd-tool__metric">
+          <dt>Average reaction time</dt>
+          <dd data-metric="averageReactionTime">Not available</dd>
+        </div>
+        <div class="adhd-tool__metric">
+          <dt>Reaction-time variability</dt>
+          <dd data-metric="reactionTimeVariability">Not available</dd>
+        </div>
+        <div class="adhd-tool__metric">
+          <dt>Trial accuracy</dt>
+          <dd data-metric="accuracy">0%</dd>
+        </div>
+      </dl>
+    </section>
+
+    <p class="adhd-tool__metric-note">Accuracy counts both responses to matching items and correctly withheld responses to non-matching items.</p>
+    <p class="adhd-tool__status" data-results-status role="status" aria-live="polite" aria-atomic="true"></p>
+
+    <div class="adhd-tool__actions">
+      <button class="adhd-tool__button adhd-tool__button--primary" type="button" data-action="restart">Run another task</button>
+      <button class="adhd-tool__button adhd-tool__button--secondary" type="button" data-action="export">Export local JSON</button>
+    </div>
+  </section>
+
+  <p class="adhd-tool__privacy">No camera or movement tracking is used. Session data stays in this page unless you choose to download a JSON file.</p>
+  <noscript><p class="adhd-tool__notice">JavaScript is required to run this interactive demo.</p></noscript>
+</div>
+{{ end }}
+
+{{ define "page_scripts" }}
+{{- $script := resources.Get "js/tools/adhd.js" | minify | fingerprint "sha384" -}}
+<script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>
+{{ end }}

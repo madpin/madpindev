@@ -1,0 +1,16 @@
+{{ $alt := .Text | plainify }}
+{{ $loading := "lazy" }}
+{{ with .Page.Resources.GetMatch .Destination }}
+  {{ $small := .Resize "480x webp q74" }}
+  {{ $medium := .Resize "800x webp q76" }}
+  {{ $large := .Resize "1280x webp q78" }}
+  <figure>
+    <picture>
+      <source type="image/webp" srcset="{{ $small.RelPermalink }} 480w, {{ $medium.RelPermalink }} 800w, {{ $large.RelPermalink }} 1280w" sizes="(max-width: 52rem) 100vw, 52rem">
+      <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $alt }}" loading="{{ $loading }}" decoding="async">
+    </picture>
+    {{ with $.Title }}<figcaption>{{ . }}</figcaption>{{ end }}
+  </figure>
+{{ else }}
+  <img src="{{ .Destination | safeURL }}" alt="{{ $alt }}" loading="{{ $loading }}" decoding="async">
+{{ end }}

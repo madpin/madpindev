@@ -1,6 +1,7 @@
 ---
-title: "Posts Archive"
+title: Posts Archive
 layout: archive
-type: archive
-description: Archive of historical posts.
+description: A chronological archive of published posts.
+build:
+  list: never
 ---

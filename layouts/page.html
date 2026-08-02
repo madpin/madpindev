@@ -1,0 +1,5 @@
+{{ define "main" }}
+  <article class="prose page-shell page-content"{{ if not .Params.noindex }} data-pagefind-body{{ end }}>
+    {{ .Content }}
+  </article>
+{{ end }}

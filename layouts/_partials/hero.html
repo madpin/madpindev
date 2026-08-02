@@ -1,0 +1,30 @@
+{{ $image := .Params.image | default site.Params.headerImage }}
+{{ $resource := .Resources.GetMatch $image }}
+{{ if not $resource }}{{ $resource = resources.Get $image }}{{ end }}
+<header class="hero{{ if eq .Params.headerstyle "text" }} hero-text{{ end }}">
+  <div class="hero-media" aria-hidden="true">
+    {{ with $resource }}
+      {{ $small := .Resize "640x webp q74" }}
+      {{ $medium := .Resize "960x webp q76" }}
+      {{ $large := .Resize "1440x webp q78" }}
+      <img src="{{ $medium.RelPermalink }}" srcset="{{ $small.RelPermalink }} 640w, {{ $medium.RelPermalink }} 960w, {{ $large.RelPermalink }} 1440w" sizes="100vw" width="{{ $medium.Width }}" height="{{ $medium.Height }}" alt="" fetchpriority="high">
+    {{ else }}
+      <img src="{{ $image | relURL }}" alt="" fetchpriority="high">
+    {{ end }}
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    {{ if eq .Type "post" }}
+      {{ with .GetTerms "tags" }}<div class="hero-tags">{{ range . }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</div>{{ end }}
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.subtitle }}<p class="hero-subtitle">{{ . }}</p>{{ end }}
+      <p class="hero-meta">{{ i18n "postedBy" }} {{ .Params.author | default site.Params.author.name }} · <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time></p>
+    {{ else if .IsHome }}
+      <h1>{{ site.Title }}</h1>
+      <p class="hero-subtitle">{{ site.Params.slogan }}</p>
+    {{ else }}
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="hero-subtitle">{{ . }}</p>{{ end }}
+    {{ end }}
+  </div>
+</header>

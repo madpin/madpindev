@@ -1,0 +1,12 @@
+{{ define "main" }}
+  {{ $posts := where site.RegularPages "Type" "post" }}
+  {{ $posts = where $posts "Params.unlisted" "ne" true }}
+  {{ $paginator := .Paginate $posts }}
+  <div class="content-grid page-shell">
+    <section class="post-list" aria-label="{{ i18n "recentPosts" }}" data-pagefind-ignore="all">
+      {{ range $paginator.Pages }}{{ partial "post-card.html" . }}{{ end }}
+      {{ partial "pagination.html" . }}
+    </section>
+    {{ partial "sidebar.html" . }}
+  </div>
+{{ end }}

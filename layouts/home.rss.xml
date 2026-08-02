@@ -1,0 +1,22 @@
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.Title }}</title>
+    <link>{{ site.Home.Permalink }}</link>
+    <description>{{ site.Params.description }}</description>
+    <generator>Hugo</generator>
+    <language>{{ site.Language.Locale }}</language>
+    {{ with site.Home.OutputFormats.Get "RSS" }}<atom:link href="{{ .Permalink }}" rel="self" type="application/rss+xml" />{{ end }}
+    {{ $posts := where site.RegularPages "Type" "post" }}
+    {{ $posts = where $posts "Params.unlisted" "ne" true }}
+    {{ range first 20 $posts }}
+      <item>
+        <title>{{ .Title }}</title>
+        <link>{{ .Permalink }}</link>
+        <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+        <guid isPermaLink="true">{{ .Permalink }}</guid>
+        <description>{{ .Description | default .Summary | plainify | html }}</description>
+      </item>
+    {{ end }}
+  </channel>
+</rss>

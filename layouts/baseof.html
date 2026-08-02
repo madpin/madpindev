@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="{{ site.Language.Locale }}">
+<head>
+  {{ partial "head.html" . }}
+  {{ block "page_styles" . }}{{ end }}
+</head>
+<body class="kind-{{ .Kind }} type-{{ .Type }}">
+  <a class="skip-link" href="#main-content">{{ i18n "skipToContent" }}</a>
+  {{ partial "nav.html" . }}
+  {{ block "hero" . }}{{ if not .Params.hideHero }}{{ partial "hero.html" . }}{{ end }}{{ end }}
+  <main id="main-content" tabindex="-1">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+  {{ with resources.Get "js/main.js" | minify | fingerprint }}
+    <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
+  {{ end }}
+  {{ block "page_scripts" . }}{{ end }}
+</body>
+</html>

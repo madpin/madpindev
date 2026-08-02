@@ -1,0 +1,25 @@
+{
+  "name": "madpindev",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "20.x"
+  },
+  "scripts": {
+    "build": "hugo --cleanDestinationDir --environment production --minify --destination dist && pagefind --site dist",
+    "build:drafts": "hugo --cleanDestinationDir --environment development --buildDrafts --buildFuture --destination .tmp/drafts",
+    "search": "pagefind --site dist",
+    "check:content": "node scripts/check-content.mjs",
+    "check:output": "node scripts/check-output.mjs",
+    "check:html": "html-validate \"dist/**/*.html\"",
+    "test:e2e": "playwright test",
+    "test": "npm run check:content && npm run build && npm run check:output && npm run check:html && npm run test:e2e"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.12.1",
+    "@playwright/test": "1.61.1",
+    "html-validate": "10.17.0",
+    "pagefind": "1.5.2"
+  }
+}

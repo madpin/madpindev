@@ -1,0 +1,8 @@
+<article class="post-card">
+  <a class="post-card-link" href="{{ .RelPermalink }}">
+    <h2>{{ .Title }}</h2>
+    {{ with .Params.subtitle }}<p class="post-card-subtitle">{{ . }}</p>{{ end }}
+    <p>{{ .Description | default .Summary | plainify | htmlUnescape | truncate 240 }}</p>
+  </a>
+  <p class="post-card-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time> · {{ .ReadingTime }} {{ i18n "minuteRead" }}</p>
+</article>

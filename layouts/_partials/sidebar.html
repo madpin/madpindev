@@ -1,0 +1,15 @@
+<aside class="sidebar" aria-label="{{ i18n "sidebar" }}">
+  <section class="profile-card">
+    <a href="{{ "/about/" | relLangURL }}"><img src="{{ site.Params.avatar | relURL }}" width="300" height="300" loading="lazy" decoding="async" alt="{{ site.Params.author.name }}"></a>
+    <p>{{ site.Params.about }}</p>
+    <nav class="sidebar-links" aria-label="{{ i18n "profileLinks" }}">{{ range site.Params.social }}<a href="{{ .url }}" rel="me noopener noreferrer">{{ .name }}</a>{{ end }}</nav>
+  </section>
+  <section>
+    <h2>{{ i18n "quickLinks" }}</h2>
+    <ul class="plain-list">{{ range site.Params.bookmarks }}<li><a href="{{ .url }}" rel="noopener noreferrer">{{ .name }}</a></li>{{ end }}</ul>
+  </section>
+  <section>
+    <h2>{{ i18n "featuredTags" }}</h2>
+    <div class="tag-cloud">{{ range first 20 site.Taxonomies.tags.ByCount }}<a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }} <span>({{ .Count }})</span></a>{{ end }}</div>
+  </section>
+</aside>

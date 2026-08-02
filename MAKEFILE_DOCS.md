@@ -1,113 +1,67 @@
-# Hugo Blog - Makefile Documentation
+# Makefile Reference
 
-This project uses a comprehensive Makefile for all development, build, and deployment tasks.
+The Makefile provides the Docker-backed workflow for the Hugo blog. Run `make help` for the current target list.
 
-## Quick Start
+## Development
 
-```bash
-# Show all available commands
-make help
+| Target | Purpose |
+|---|---|
+| `make dev` | Start the local server with drafts on `127.0.0.1:1313` |
+| `make production-server` | Start the local server without drafts |
+| `make stop` | Stop the named development container |
+| `make logs` | Follow development container logs |
+| `make shell` | Open a shell in the running container |
 
-# Start development server
-make dev
+Override the local port with `make dev HOST_PORT=8080`.
 
-# Create a new post
-make new TITLE="My Post Title"
+## Content
 
-# Deploy to production
-make deploy
-```
+| Target | Purpose |
+|---|---|
+| `make new SLUG=my-post` | Create `content/post/my-post/index.en.md` from the project archetype |
+| `make publish POST=my-post` | Change the English bundle draft flag to `false` |
+| `make list-posts` | List published content through Hugo |
+| `make list-drafts` | List draft content through Hugo |
+| `make stats` | Print Hugo's resolved content inventory |
+| `make check-images` | Run the content and bundle contract check |
 
-## Common Commands
+Slugs must contain lowercase letters, numbers, and single hyphens.
 
-### Development
-- `make dev` - Start Hugo development server with drafts (uses hugo.dev.yml for local baseURL)
-- `make serve` - Alias for `make dev`
-- `make stop` - Stop the running development server
-- `make logs` - View server logs
-- `make production-server` - Start server without drafts
+## Build and verification
 
-### Post Management
-- `make new` - Create new post interactively
-- `make new TITLE="My Title" SUBTITLE="My Subtitle"` - Create post with title
-- `make list-posts` - List all blog posts
-- `make list-drafts` - List draft posts
-- `make publish POST=2024-12-06-my-post.md` - Publish a draft
+| Target | Purpose |
+|---|---|
+| `make build` | Build production into `dist/` and create Pagefind indexes |
+| `make draft` | Build drafts and future content into `.tmp/drafts/` |
+| `make verify` | Run the complete Docker-backed release gate |
+| `make test` | Alias for `make verify` |
+| `make search` | Rebuild Pagefind for the existing `dist/` artifact |
+| `make search-setup` | Install exact Node dependencies with `npm ci` |
+| `make clean` | Remove generated project artifacts |
+| `make clean-cache` | Remove the guarded Hugo cache path |
 
-### Build & Deploy
-- `make build` - Build site for production
-- `make deploy` - Build and deploy to GitHub
-- `make deploy MSG="Custom message"` - Deploy with custom commit message
-- `make clean` - Clean generated files
-
-### Diagnostics
-- `make stats` - Show blog statistics
-- `make check-images` - Check if post images exist
-- `make debug-urls` - Test if images are accessible (requires running server)
-- `make config` - Show current configuration
-
-## Configuration Files
-
-### hugo.yml
-Main Hugo configuration with production settings (baseURL: https://madpin.dev)
-
-### hugo.dev.yml
-Development configuration override (baseURL: http://localhost:1313)
-This file is automatically used by `make dev` to ensure images and assets load correctly in local development.
-
-## Image Fix
-
-If images aren't showing in local development but work in production, this is because Hugo uses the production baseURL from `hugo.yml`. The Makefile now uses both config files:
+The Hugo image is pinned by version and OCI digest. Override variables only when intentionally testing a toolchain change:
 
 ```bash
-make dev  # Automatically uses: --config hugo.yml,hugo.dev.yml
+make build HUGO_VERSION=0.164.0 HUGO_IMAGE=repository/image@sha256:digest
 ```
 
-This ensures the development server uses `http://localhost:1313` as the base URL for all assets.
+## Deployment
 
-## Custom Configuration
+`make deploy` runs the release gate. It does not commit or push generated files. Cloudflare Pages deploys source commits from `main` through its Git integration.
 
-You can override any Makefile variable:
+`make deploy-dry-run` builds and prints the artifact size without performing a deployment.
 
-```bash
-# Use different port
-make dev HOST_PORT=8080
+## Configuration
 
-# Use different Docker user
-make dev DOCKER_UID=1000 DOCKER_GID=1000
+| Variable | Default |
+|---|---|
+| `HOST_PORT` | `1313` |
+| `HOST_BIND_ADDRESS` | `127.0.0.1` |
+| `HUGO_VERSION` | `0.164.0` |
+| `HUGO_CACHE` | `~/hugo_cache` |
+| `DIST_DIR` | `dist` |
+| `ENVIRONMENT` | `development` |
+| `LOG_LEVEL` | `info` |
 
-# Use different Hugo image
-make dev HUGO_IMAGE=klakegg/hugo:latest
-```
-
-## Requirements
-
-- Docker
-- make
-- npm (for Algolia search indexing)
-
-## Troubleshooting
-
-### Images not showing in development
-Run `make config` to verify baseURL settings and ensure `hugo.dev.yml` exists.
-
-### Server won't start
-Check if Docker is running: `make check-docker`
-
-### Posts not building
-Check for YAML errors in frontmatter. Look at the server logs with `make logs`.
-
-## Replaced Scripts
-
-This Makefile replaces the following shell scripts:
-- `dev_run.sh` → `make dev`
-- `new_post.sh` → `make new`
-- `deploy.sh` → `make deploy`
-- `build_algolia_index.sh` → `make algolia`
-
-
-
-
-
-
-
+Production settings are in `hugo.yml`; `hugo.dev.yml` overrides only the local base URL.

@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <section class="search-page page-shell" data-pagefind-ignore="all">
+    <form class="search-form" id="search-form" role="search">
+      <label for="search-input">{{ i18n "searchLabel" }}</label>
+      <div class="search-controls">
+        <input id="search-input" name="q" type="search" autocomplete="off" minlength="2" required>
+        <button type="submit">{{ i18n "search" }}</button>
+      </div>
+    </form>
+    <p id="search-status" class="search-status" role="status" aria-live="polite"></p>
+    <div id="search-results" class="search-results"></div>
+  </section>
+{{ end }}
+{{ define "page_scripts" }}
+  {{ with resources.Get "js/search.js" | minify | fingerprint }}<script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" type="module"></script>{{ end }}
+{{ end }}

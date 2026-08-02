@@ -1,0 +1,10 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <nav class="social-links" aria-label="{{ i18n "socialLinks" }}">
+      {{ range site.Params.social }}<a href="{{ .url }}" rel="me noopener noreferrer">{{ .name }}</a>{{ end }}
+      {{ with site.Home.OutputFormats.Get "RSS" }}<a href="{{ .RelPermalink }}">RSS</a>{{ end }}
+    </nav>
+    {{ $latest := index (first 1 site.RegularPages.ByLastmod.Reverse) 0 }}
+    <p>© {{ $latest.Lastmod.Year }} {{ site.Title }}</p>
+  </div>
+</footer>

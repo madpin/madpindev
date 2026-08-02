@@ -1,0 +1,133 @@
+{{ define "main" }}
+<div class="acls-tool" data-acls-tool>
+  <a class="acls-skip-link" href="#acls-study-content">Skip to study content</a>
+  <div class="acls-mobile-bar">
+    <button class="acls-menu-button" type="button" aria-expanded="false" aria-controls="acls-sidebar" data-menu-trigger>
+      <span class="acls-menu-symbol" aria-hidden="true"></span>
+      <span>Contents</span>
+    </button>
+  </div>
+  <div class="acls-shell">
+    <aside class="acls-sidebar" id="acls-sidebar" aria-label="ACLS study guide contents">
+      <div class="acls-sidebar-header">
+        <p class="acls-sidebar-title">ACLS Study Guide</p>
+        <button class="acls-sidebar-close" type="button" data-menu-close>Close</button>
+      </div>
+      <nav aria-label="Study topics">
+        <ol class="acls-nav-list">
+          <li>
+            <a class="acls-nav-link" href="#algorithms">1. ACLS Algorithms</a>
+            <ol class="acls-nav-sublist">
+              <li><a class="acls-nav-link" href="#shockable">Shockable Rhythms</a></li>
+              <li><a class="acls-nav-link" href="#non-shockable">Non-Shockable Rhythms</a></li>
+              <li><a class="acls-nav-link" href="#bradycardia">Bradycardia</a></li>
+              <li><a class="acls-nav-link" href="#tachycardia">Tachycardia</a></li>
+              <li><a class="acls-nav-link" href="#post-cardiac">Post-Cardiac Arrest</a></li>
+            </ol>
+          </li>
+          <li>
+            <a class="acls-nav-link" href="#medications">2. Medications</a>
+            <ol class="acls-nav-sublist">
+              <li><a class="acls-nav-link" href="#epinephrine">Epinephrine</a></li>
+              <li><a class="acls-nav-link" href="#amiodarone">Amiodarone</a></li>
+              <li><a class="acls-nav-link" href="#lidocaine">Lidocaine</a></li>
+              <li><a class="acls-nav-link" href="#atropine">Atropine</a></li>
+              <li><a class="acls-nav-link" href="#adenosine">Adenosine</a></li>
+              <li><a class="acls-nav-link" href="#other-drugs">Other Drugs</a></li>
+            </ol>
+          </li>
+          <li>
+            <a class="acls-nav-link" href="#airway">3. Airway Management</a>
+            <ol class="acls-nav-sublist">
+              <li><a class="acls-nav-link" href="#basic-airway">Basic Airways</a></li>
+              <li><a class="acls-nav-link" href="#bag-mask">Bag-Mask Ventilation</a></li>
+              <li><a class="acls-nav-link" href="#advanced-airway">Advanced Airways</a></li>
+              <li><a class="acls-nav-link" href="#intubation">Intubation</a></li>
+              <li><a class="acls-nav-link" href="#confirmation">Confirmation</a></li>
+              <li><a class="acls-nav-link" href="#management">Management</a></li>
+            </ol>
+          </li>
+          <li>
+            <a class="acls-nav-link" href="#electrical">4. Electrical Therapy</a>
+            <ol class="acls-nav-sublist">
+              <li><a class="acls-nav-link" href="#defibrillation">Defibrillation</a></li>
+              <li><a class="acls-nav-link" href="#cardioversion">Cardioversion</a></li>
+              <li><a class="acls-nav-link" href="#pacing">Transcutaneous Pacing</a></li>
+            </ol>
+          </li>
+          <li><a class="acls-nav-link" href="#team">5. Team Dynamics</a></li>
+          <li><a class="acls-nav-link" href="#ht">6. H's and T's</a></li>
+          <li><a class="acls-nav-link" href="#special">7. Special Situations</a></li>
+          <li><a class="acls-nav-link" href="#tips">8. Exam Tips</a></li>
+        </ol>
+      </nav>
+    </aside>
+    <button class="acls-menu-backdrop" type="button" aria-label="Close study guide contents" data-menu-close hidden></button>
+    <article class="acls-main" id="acls-study-content" tabindex="-1">
+      <header class="acls-tool-header">
+        <div>
+          <p class="acls-eyebrow">Clinical study aid</p>
+          <h1>{{ .Title }}</h1>
+          <p class="acls-intro">Review ACLS algorithms, medications, airway management, electrical therapy, team dynamics, and exam essentials.</p>
+          <p class="acls-disclaimer">For study only. Follow your current course materials, local protocols, and clinical guidance.</p>
+        </div>
+        <div class="acls-header-actions">
+          <form class="acls-search" role="search" data-search-form>
+            <label for="acls-search-input">Search study notes</label>
+            <div class="acls-search-row">
+              <input id="acls-search-input" type="search" inputmode="search" autocomplete="off" placeholder="Try “epinephrine”" aria-describedby="acls-search-status">
+              <button type="button" data-search-clear hidden>Clear</button>
+              <button type="submit">Search</button>
+            </div>
+          </form>
+          <button class="acls-notes-button" type="button" aria-haspopup="dialog" aria-controls="acls-notes-dialog" data-notes-open>Personal notes</button>
+        </div>
+        <p class="acls-search-status" id="acls-search-status" role="status" aria-live="polite"></p>
+        <details class="acls-quick-reference">
+          <summary>Quick reference</summary>
+          <div class="acls-quick-reference-grid">
+            <div><strong>Shockable rhythms</strong><span>Immediate defibrillation → CPR → Epinephrine → Amiodarone</span></div>
+            <div><strong>Non-shockable rhythms</strong><span>CPR → Epinephrine → Search H's &amp; T's</span></div>
+            <div><strong>Bradycardia</strong><span>Atropine → Pacing → Dopamine/Epinephrine</span></div>
+            <div><strong>Tachycardia</strong><span>Unstable: cardioversion. Stable: adenosine (narrow) or amiodarone (wide).</span></div>
+          </div>
+        </details>
+      </header>
+      <div class="acls-sections" data-search-content>
+        {{ replaceRE `(?s)^\s*~~~html\r?\n(.*)\r?\n~~~\s*$` "$1" .RawContent | safeHTML }}
+      </div>
+      <p class="acls-no-results" data-no-results hidden>No study sections match that search.</p>
+    </article>
+  </div>
+  <dialog class="acls-notes-dialog" id="acls-notes-dialog" aria-labelledby="acls-notes-title" aria-describedby="acls-notes-storage">
+    <form method="dialog" data-notes-form>
+      <div class="acls-dialog-header">
+        <h2 id="acls-notes-title">Personal study notes</h2>
+        <button type="submit" value="cancel" aria-label="Close personal notes">Close</button>
+      </div>
+      <p id="acls-notes-storage">Saved only in this browser on this device.</p>
+      <label for="acls-notes-text">Notes</label>
+      <textarea id="acls-notes-text" rows="12" maxlength="20000" placeholder="Add reminders, questions, or topics to review."></textarea>
+      <p class="acls-notes-status" role="status" aria-live="polite" data-notes-status></p>
+      <div class="acls-dialog-actions">
+        <button type="submit" value="cancel">Cancel</button>
+        <button class="acls-primary-button" type="submit" value="save" data-notes-save>Save on this device</button>
+      </div>
+    </form>
+  </dialog>
+</div>
+{{ end }}
+
+{{ define "page_styles" }}
+  {{ with resources.Get "css/tools/acls.css" }}
+    {{ $style := . | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
+  {{ end }}
+{{ end }}
+
+{{ define "page_scripts" }}
+  {{ with resources.Get "js/tools/acls.js" }}
+    {{ $script := . | minify | fingerprint }}
+    <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" crossorigin="anonymous" defer></script>
+  {{ end }}
+{{ end }}
