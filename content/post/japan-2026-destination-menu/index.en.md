@@ -209,40 +209,40 @@ A ballpark for a comfortable room for two — handy for weighing one base agains
 
 | Destination | Per night (room for two) | Notes |
 |---|---|---|
-| **Seoul** | KRW 230,000–360,000 | Larger studio / one-bedroom |
-| **Suwon** | KRW 140,000–240,000 | Only if a festival evening needs it; usually a day trip |
-| **Busan** | KRW 190,000–300,000 | 26–30 m² room |
-| **Gyeongju** | KRW 140,000–260,000 | Western-style room; budget taxis on top |
-| **Jeonju** | KRW 140,000–260,000 | Modern room over the hanok village |
-| **Daejeon** | KRW 150,000–250,000 | Dunsan or near the station |
-| **Sokcho** | KRW 150,000–280,000 | Larger room; verify October inventory |
-| **Jeju** | KRW 160,000–320,000 | Plus ~KRW 100,000–250,000/day for a car, driver, or tour |
-| **Andong** | KRW 130,000–250,000 | Western-style room |
-| **Gangneung** | KRW 150,000–280,000 | Larger modern room |
-| **Jinju** | KRW 120,000–230,000 | Festival nights need live checks |
-| **Tongyeong/Geoje** | KRW 150,000–260,000 | Harbor area |
-| **Suncheon** | KRW 140,000–260,000 | Near the station |
-| **Gwangju/Damyang** | KRW 150,000–260,000 | Gwangju as the base |
-| **Fukuoka** | JPY 34,000–56,000 | 30–31 m² by Hakata |
-| **Nagasaki** | JPY 20,000–35,000 | Larger room near the station/trams |
-| **Beppu** | JPY 18,000–35,000 | Western hotel; private-bath ryokan higher |
-| **Hiroshima** | JPY 22,000–36,000 | 28–31 m² by the station |
-| **Okayama/Kurashiki** | JPY 22,000–42,000 | Larger twin |
-| **Himeji** | JPY 16,000–28,000 | If staying (a day trip is better) |
-| **Kobe** | JPY 22,000–38,000 | If staying (Sannomiya) |
-| **Osaka** | JPY 30,000–47,000 | 28 m² studio with kitchen |
-| **Nara** | JPY 18,000–30,000 | If staying (Kintetsu Nara) |
-| **Uji** | JPY 18,000–30,000 | If staying (Kyoto is stronger) |
-| **Koyasan** | JPY 35,000–75,000 | For two, usually incl. Buddhist dinner + breakfast |
-| **Kyoto** | JPY 25,000–88,000 | Twin up to a large apartment |
-| **Kanazawa** | JPY 30,000–48,000 | ~32 m² room |
-| **Nagoya** | JPY 25,000–45,000 | Larger twin |
-| **Takayama** | JPY 25,000–50,000 | Western room; inns are smaller with fish-heavy meals |
-| **Matsumoto** | JPY 24,000–46,000 | Larger Western twin |
-| **Tokyo** | JPY 44,500–74,000 | 34–37 m² apartment |
-| **Nikko** | JPY 25,000–55,000 | Western room; onsen inns with meals cost more |
-| **Hakone** | JPY 40,000–90,000 | For two, often incl. meals; private-bath rooms higher |
-| **Kawaguchiko** | JPY 35,000–80,000 | For two; Fuji-view rooms at the top of the range |
+| **Seoul** | KRW 230,000–360,000 (EUR 140–219) | Larger studio / one-bedroom |
+| **Suwon** | KRW 140,000–240,000 (EUR 85–146) | Only if a festival evening needs it; usually a day trip |
+| **Busan** | KRW 190,000–300,000 (EUR 115–182) | 26–30 m² room |
+| **Gyeongju** | KRW 140,000–260,000 (EUR 85–158) | Western-style room; budget taxis on top |
+| **Jeonju** | KRW 140,000–260,000 (EUR 85–158) | Modern room over the hanok village |
+| **Daejeon** | KRW 150,000–250,000 (EUR 91–152) | Dunsan or near the station |
+| **Sokcho** | KRW 150,000–280,000 (EUR 91–170) | Larger room; verify October inventory |
+| **Jeju** | KRW 160,000–320,000 (EUR 97–195) | Plus ~KRW 100,000–250,000/day for a car, driver, or tour |
+| **Andong** | KRW 130,000–250,000 (EUR 79–152) | Western-style room |
+| **Gangneung** | KRW 150,000–280,000 (EUR 91–170) | Larger modern room |
+| **Jinju** | KRW 120,000–230,000 (EUR 73–140) | Festival nights need live checks |
+| **Tongyeong/Geoje** | KRW 150,000–260,000 (EUR 91–158) | Harbor area |
+| **Suncheon** | KRW 140,000–260,000 (EUR 85–158) | Near the station |
+| **Gwangju/Damyang** | KRW 150,000–260,000 (EUR 91–158) | Gwangju as the base |
+| **Fukuoka** | JPY 34,000–56,000 (EUR 182–300) | 30–31 m² by Hakata |
+| **Nagasaki** | JPY 20,000–35,000 (EUR 107–187) | Larger room near the station/trams |
+| **Beppu** | JPY 18,000–35,000 (EUR 96–187) | Western hotel; private-bath ryokan higher |
+| **Hiroshima** | JPY 22,000–36,000 (EUR 118–193) | 28–31 m² by the station |
+| **Okayama/Kurashiki** | JPY 22,000–42,000 (EUR 118–225) | Larger twin |
+| **Himeji** | JPY 16,000–28,000 (EUR 86–150) | If staying (a day trip is better) |
+| **Kobe** | JPY 22,000–38,000 (EUR 118–203) | If staying (Sannomiya) |
+| **Osaka** | JPY 30,000–47,000 (EUR 160–251) | 28 m² studio with kitchen |
+| **Nara** | JPY 18,000–30,000 (EUR 96–160) | If staying (Kintetsu Nara) |
+| **Uji** | JPY 18,000–30,000 (EUR 96–160) | If staying (Kyoto is stronger) |
+| **Koyasan** | JPY 35,000–75,000 (EUR 187–401) | For two, usually incl. Buddhist dinner + breakfast |
+| **Kyoto** | JPY 25,000–88,000 (EUR 134–471) | Twin up to a large apartment |
+| **Kanazawa** | JPY 30,000–48,000 (EUR 160–257) | ~32 m² room |
+| **Nagoya** | JPY 25,000–45,000 (EUR 134–241) | Larger twin |
+| **Takayama** | JPY 25,000–50,000 (EUR 134–267) | Western room; inns are smaller with fish-heavy meals |
+| **Matsumoto** | JPY 24,000–46,000 (EUR 128–246) | Larger Western twin |
+| **Tokyo** | JPY 44,500–74,000 (EUR 238–396) | 34–37 m² apartment |
+| **Nikko** | JPY 25,000–55,000 (EUR 134–294) | Western room; onsen inns with meals cost more |
+| **Hakone** | JPY 40,000–90,000 (EUR 214–481) | For two, often incl. meals; private-bath rooms higher |
+| **Kawaguchiko** | JPY 35,000–80,000 (EUR 187–428) | For two; Fuji-view rooms at the top of the range |
 
 ## The candidates — South Korea
 
