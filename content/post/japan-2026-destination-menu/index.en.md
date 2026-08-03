@@ -178,8 +178,69 @@ Before the long profiles, here is the whole menu on one screen. "Food ease" is a
 | **Kawaguchiko** | 1 | 2 | Best chance to build a stay around Fuji scenery | Harder | Medium | Weather-dependent; don't choose only for one view |
 | **Koyasan** | 1 | 2 | Temple stay, meditation, forested sacred complex | Harder | High | Unique, but a tough comfort/food fit |
 
-> [!NOTE] A note on prices below
-> Admission prices, hours, and day-trip transport estimates (per adult, return where noted) are kept because they help *anyone* plan. I've dropped our own hotel budgets and per-night room targets — those belong in the accommodation post, not here.
+> [!NOTE] Prices are planning ranges
+> Room prices in this post are **cancellable-rate ranges for one room, two adults, per night**, with a buffer for tax but not breakfast. Admission and transport figures are per adult (return where noted). Rough euros are for orientation only — always confirm live rates and tax before booking.
+
+## Where we'll sleep — and what a night costs
+
+A few people asked about the money side, so here it is up front rather than buried in a later post. We lean toward apartment-style rooms — a kitchenette, a washer, and a bit of space — near a major station, which tends to push us into the upper half of each range.
+
+### Shortlisted hotels for the main bases
+
+| City / area | Property & room | Station | Per night | Why it fits |
+|---|---|---|---|---|
+| **Seoul / Jongno** | Somerset Palace Seoul, studio or 1-bed | Anguk 3 min; Gwanghwamun/Jonggak 5 min | KRW 230,000–360,000 (EUR 140–219) | Apartment layout, central palaces, airport coach |
+| **Seoul / Jung-gu** (backup) | Fraser Place Central Seoul, 34 m² studio, kitchenette + washer | Seodaemun ~7 min; Seoul Station ~12 min | KRW 210,000–340,000 (EUR 128–207) | More food independence and a generous room |
+| **Busan / Haeundae** | L7 Haeundae, 26–30 m² | Haeundae ~6–8 min | KRW 190,000–300,000 (EUR 115–182) | Beach setting, larger room; 40–60 min to Busan KTX |
+| **Osaka / Namba** | Fraser Residence Nankai Osaka, 28 m² studio | Nankai Namba 3 min; Metro 3–5 min | JPY 30,000–47,000 (EUR 160–251) | Kitchen and washer/dryer; direct Nankai airport line |
+| **Kyoto / station south** | MIMARU Kyoto Station, 40 m² apartment | Kyoto Sta Hachijo 2 min | JPY 56,000–88,000 (EUR 300–471) | Largest, easiest room + kitchen; premium price |
+| **Kyoto** (lower-cost backup) | Daiwa Roynet Kyoto Terrace Hachijo Premier, 24 m²+ twin | Kyoto Sta Hachijo ~2 min | JPY 25,000–42,000 (EUR 134–225) | Station convenience; no full kitchen, smaller |
+| **Fukuoka / Hakata** | Miyako Hotel Hakata, 30–31 m² superior | Connected to Hakata Sta | JPY 34,000–56,000 (EUR 182–300) | Lowest-friction Shinkansen/airport base |
+| **Hiroshima / station** | Daiwa Roynet Hiroshima-Ekimae, 28.6–30.8 m² | JR Hiroshima ~4 min | JPY 22,000–36,000 (EUR 118–193) | Larger room by intercity rail; tram to Peace Park |
+| **Kanazawa / station west** | Hyatt Centric Kanazawa, 32 m² king/twin | ~2 min from the station | JPY 30,000–48,000 (EUR 160–257) | Big windows, separate bath/shower, easy luggage |
+| **Tokyo / Ueno** | MIMARU Tokyo Ueno North, 34–37 m² apartment | JR Ueno 4 min; Metro 9 min | JPY 44,500–70,000 (EUR 238–374) | Kitchen, open layout, simple Narita route, park nearby |
+| **Tokyo / Ginza East** (backup) | MIMARU Tokyo Ginza East, apartment | Shintomicho 3 min | JPY 48,000–74,000 (EUR 257–396) | Better for Ginza/stationery; one transfer to Narita |
+
+### Indicative nightly budget for every stop
+
+A ballpark for a comfortable room for two — handy for weighing one base against another. Day-trip places show the cost *if* we ended up sleeping there.
+
+| Destination | Per night (room for two) | Notes |
+|---|---|---|
+| **Seoul** | KRW 230,000–360,000 | Larger studio / one-bedroom |
+| **Suwon** | KRW 140,000–240,000 | Only if a festival evening needs it; usually a day trip |
+| **Busan** | KRW 190,000–300,000 | 26–30 m² room |
+| **Gyeongju** | KRW 140,000–260,000 | Western-style room; budget taxis on top |
+| **Jeonju** | KRW 140,000–260,000 | Modern room over the hanok village |
+| **Daejeon** | KRW 150,000–250,000 | Dunsan or near the station |
+| **Sokcho** | KRW 150,000–280,000 | Larger room; verify October inventory |
+| **Jeju** | KRW 160,000–320,000 | Plus ~KRW 100,000–250,000/day for a car, driver, or tour |
+| **Andong** | KRW 130,000–250,000 | Western-style room |
+| **Gangneung** | KRW 150,000–280,000 | Larger modern room |
+| **Jinju** | KRW 120,000–230,000 | Festival nights need live checks |
+| **Tongyeong/Geoje** | KRW 150,000–260,000 | Harbor area |
+| **Suncheon** | KRW 140,000–260,000 | Near the station |
+| **Gwangju/Damyang** | KRW 150,000–260,000 | Gwangju as the base |
+| **Fukuoka** | JPY 34,000–56,000 | 30–31 m² by Hakata |
+| **Nagasaki** | JPY 20,000–35,000 | Larger room near the station/trams |
+| **Beppu** | JPY 18,000–35,000 | Western hotel; private-bath ryokan higher |
+| **Hiroshima** | JPY 22,000–36,000 | 28–31 m² by the station |
+| **Okayama/Kurashiki** | JPY 22,000–42,000 | Larger twin |
+| **Himeji** | JPY 16,000–28,000 | If staying (a day trip is better) |
+| **Kobe** | JPY 22,000–38,000 | If staying (Sannomiya) |
+| **Osaka** | JPY 30,000–47,000 | 28 m² studio with kitchen |
+| **Nara** | JPY 18,000–30,000 | If staying (Kintetsu Nara) |
+| **Uji** | JPY 18,000–30,000 | If staying (Kyoto is stronger) |
+| **Koyasan** | JPY 35,000–75,000 | For two, usually incl. Buddhist dinner + breakfast |
+| **Kyoto** | JPY 25,000–88,000 | Twin up to a large apartment |
+| **Kanazawa** | JPY 30,000–48,000 | ~32 m² room |
+| **Nagoya** | JPY 25,000–45,000 | Larger twin |
+| **Takayama** | JPY 25,000–50,000 | Western room; inns are smaller with fish-heavy meals |
+| **Matsumoto** | JPY 24,000–46,000 | Larger Western twin |
+| **Tokyo** | JPY 44,500–74,000 | 34–37 m² apartment |
+| **Nikko** | JPY 25,000–55,000 | Western room; onsen inns with meals cost more |
+| **Hakone** | JPY 40,000–90,000 | For two, often incl. meals; private-bath rooms higher |
+| **Kawaguchiko** | JPY 35,000–80,000 | For two; Fuji-view rooms at the top of the range |
 
 ## The candidates — South Korea
 
@@ -868,16 +929,31 @@ Before the long profiles, here is the whole menu on one screen. "Food ease" is a
 
 **Nights:** 5 minimum, 7–8 comfortable. Tokyo stays last, for the fixed Narita departure.
 
-**Where to stay:** Ueno (4–10 min to JR/Metro) with straightforward Skyliner access from Keisei-Ueno. Ginza East is stronger for stationery but less direct to Narita.
+**Where to stay — one base, or hotel-hop?** Short answer: **one base for the whole Tokyo block.** Tokyo's rail is so good that a single well-chosen area reaches almost everything in 20–40 minutes, and each hotel change quietly costs half a day plus luggage hassle — expensive across only 5–7 nights. Pick the base for two things: an easy Narita departure and closeness to the interests we'll keep coming back to.
 
-**What to do:**
-- **Technology, 1 day:** Akihabara plus a focused electronics, computing, gaming, or digital-art stop.
-- **Stationery & making, 1 day:** Kakimori, Kuramae, Ginza Itoya, and a bookbinding/ink/notebook workshop if available.
-- **Harry Potter, 1 day:** the Warner Bros. Studio Tour Tokyo (adult tickets from ~**JPY 7,000**) — a controlled indoor route of several hours, so check exit options first.
-- **One Piece/character shopping, half–full day:** Mugiwara Store locations, Tokyo Character Street, the Pokémon Center, and a cat/cute-dog stop or two.
-- **Gardens & pretty Tokyo, 1 day:** Shinjuku Gyoen (**JPY 500**), the Nezu Museum garden, or Ueno Park.
-- **Ghibli Museum, half day:** advance-only, **JPY 1,000**; October tickets release **2026-09-10 at 10:00 JST**. Pair with Kichijoji/Inokashira Park.
-- **Classic Tokyo, 1–2 days:** Asakusa, Meiji Jingu/Harajuku, Shibuya, Ginza, and one observation deck.
+| Base area | Best for | Narita access | Trade-off |
+|---|---|---|---|
+| **Ueno / Asakusa** (our pick) | Akihabara, Ueno Park museums, Kuramae stationery, classic east Tokyo | **Keisei Skyliner ~45 min** | Calmer nights than the west side |
+| **Tokyo Sta / Ginza / Nihonbashi** | Stationery (Itoya), Marunouchi, Shinkansen day trips | Narita Express, direct | Pricier; quiet after dark |
+| **Shinjuku** | Ghibli Museum, Warner Bros. Harry Potter, Shinjuku Gyoen, food and buzz | N'EX or bus, ~90 min | Huge, maze-like station |
+| **Shibuya** | Nintendo TOKYO & Pokémon at Parco, Shibuya Sky, youthful energy | N'EX | Crowded and pricier |
+
+We'll almost certainly land on **Ueno**: the Skyliner makes the fixed Narita afternoon flight painless, Akihabara is one stop away, and the park museums and Kuramae stationery are close. Whatever we pick, we'll keep the **last night or two near a fast Narita link** (Skyliner from Ueno/Nippori, or N'EX from Tokyo/Shinagawa/Shibuya/Shinjuku).
+
+**When splitting into two hotels is actually worth it:** only if we bolt on an **onsen or Fuji night** — Hakone, Kawaguchiko, or upper Nikko — which is a separate one-night base, not a second Tokyo hotel. If we truly wanted two Tokyo vibes, the clean split is **Asakusa/Ueno first** (old-town east + Skytree) then **Shinjuku/west last** (Ghibli, Warner Bros.) — but across 5–7 nights the lost half-day rarely pays off.
+
+**Indicative room allowance:** JPY 44,500–74,000 per night for a 34–37 m² apartment (our upper-range, kitchen-and-space preference).
+
+**What to do** — this is where a lot of the trip's "both of us, happily" energy lives:
+- **Technology & gaming, 1–2 days:** Akihabara (electronics, retro games, arcades), **Nakano Broadway** for retro games and collectibles, the **Miraikan** science museum in Odaiba, and **teamLab Planets / Borderless** digital art (immersive and enclosed — a comfort check first).
+- **Stationery & making, 1 day:** Kakimori's custom notebooks and the Kuramae craft studios, Ginza Itoya, and Sekaido in Shinjuku — ideally with a bookbinding or ink workshop.
+- **Harry Potter, 1 day:** the **Warner Bros. Studio Tour Tokyo** in Nerima (adult tickets from ~**JPY 7,000**) — a controlled indoor route of several hours, so check exit options first.
+- **One Piece, Pokémon & cute, half–full day:** the **Mugiwara Store** and **Jump Shop**, **Nintendo TOKYO** and **Pokémon Center Shibuya** at Shibuya Parco, **Pokémon Center Mega Tokyo** with Sanrio and Sunshine City in Ikebukuro, and Tokyo Character Street beneath Tokyo Station.
+- **Cats & pretty lanes, half day:** **Yanaka** — an old-town neighborhood of temples, low-rise streets, and resident cats — plus a cat/animal café, and the beckoning-cat temple **Gotokuji** if we want the maneki-neko pilgrimage.
+- **Gardens & pretty Tokyo, 1 day:** Shinjuku Gyoen (**JPY 500**), Rikugien, Koishikawa Korakuen, bayside Hamarikyu, or the Nezu Museum garden, then a nearby neighborhood.
+- **Ghibli Museum, half day:** advance-only, **JPY 1,000**; October tickets release **2026-09-10 at 10:00 JST**. Pair with Kichijoji and Inokashira Park.
+- **Classic Tokyo & views, 1–2 days:** Asakusa's Senso-ji and Nakamise, Tokyo Skytree and the Sumida riverside, the Shibuya Scramble with **Shibuya Sky**, Meiji Jingu with Harajuku/Omotesando, and Ginza — spread the districts geographically and pick just one observation deck.
+- **Optional cute day-trip:** Sanrio Puroland out in Tama, if a day of Hello Kitty overload sounds like a good time.
 
 **Day trips from Tokyo:**
 
@@ -1103,7 +1179,7 @@ The actual decision comes down to marking each line **Must**, **Would like**, or
 This menu is the foundation. From here the series will get concrete:
 
 1. **The route** — turning ticked must-dos into a dated Seoul-to-Tokyo itinerary.
-2. **Where we sleep** — the accommodation shortlist, city by city.
+2. **Where we sleep** — turning the shortlist above into confirmed, emailed-ahead bookings.
 3. **Getting around** — flights, rail passes, and the Korea→Japan crossing.
 4. **Eating well anyway** — how we're planning food across two countries.
 
