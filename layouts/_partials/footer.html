@@ -1,8 +1,18 @@
 <footer class="site-footer">
   <div class="footer-inner">
     <nav class="social-links" aria-label="{{ i18n "socialLinks" }}">
-      {{ range site.Params.social }}<a href="{{ .url }}" rel="me noopener noreferrer">{{ .name }}</a>{{ end }}
-      {{ with site.Home.OutputFormats.Get "RSS" }}<a href="{{ .RelPermalink }}">RSS</a>{{ end }}
+      {{ range site.Params.social }}
+        <a class="social-icon-link" href="{{ .url }}" rel="me noopener noreferrer" title="{{ .name }}">
+          {{ partial "social-icon.html" .name }}
+          <span class="visually-hidden">{{ .name }}</span>
+        </a>
+      {{ end }}
+      {{ with site.Home.OutputFormats.Get "RSS" }}
+        <a class="social-icon-link" href="{{ .RelPermalink }}" rel="alternate" title="RSS">
+          {{ partial "social-icon.html" "RSS" }}
+          <span class="visually-hidden">RSS</span>
+        </a>
+      {{ end }}
     </nav>
     {{ $latest := index (first 1 site.RegularPages.ByLastmod.Reverse) 0 }}
     <p>© {{ $latest.Lastmod.Year }} {{ site.Title }}</p>

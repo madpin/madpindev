@@ -36,6 +36,42 @@ test('navigation is keyboard and mobile operable', async ({ page, isMobile }) =>
   expect(overflow).toBeLessThanOrEqual(1);
 });
 
+test('light and dark backgrounds toggle and persist', async ({ page }) => {
+  await page.goto('/');
+  const themeToggle = page.locator('[data-theme-toggle]');
+  if (await themeToggle.isHidden()) await page.getByRole('button', { name: 'Menu' }).click();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
+  await themeToggle.click();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+  expect(await page.locator('body').evaluate(element => getComputedStyle(element).backgroundColor)).toBe('rgb(0, 0, 0)');
+  await page.reload();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+  const persistedToggle = page.locator('[data-theme-toggle]');
+  if (await persistedToggle.isHidden()) await page.getByRole('button', { name: 'Menu' }).click();
+  await persistedToggle.click();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
+  expect(await page.locator('body').evaluate(element => getComputedStyle(element).backgroundColor)).toBe('rgb(255, 255, 255)');
+});
+
+for (const path of ['/', '/2026/05/02-epublate-translating-books-with-llms/', '/adhd-assessment/', '/pages/acls-notes/']) {
+  test(`${path} dark background has no automated accessibility violations`, async ({ page }) => {
+    await page.addInitScript(() => localStorage.setItem('madpindev-theme', 'dark'));
+    await page.goto(path);
+    const results = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa']).analyze();
+    expect(results.violations).toEqual([]);
+  });
+}
+
+test('footer social links use accessible local icons', async ({ page }) => {
+  await page.goto('/');
+  const footer = page.getByRole('contentinfo');
+  for (const name of ['GitHub', 'GitLab', 'LinkedIn', 'Stack Overflow', 'Instagram', 'RSS']) {
+    const link = footer.getByRole('link', { name });
+    await expect(link).toBeVisible();
+    await expect(link.locator('svg')).toHaveCount(1);
+  }
+});
+
 test('production pages do not contact third-party origins', async ({ page }) => {
   const externalOrigins = new Set();
   page.on('request', request => {
