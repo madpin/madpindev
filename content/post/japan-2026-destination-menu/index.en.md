@@ -1,6 +1,8 @@
 ---
 type: post
 draft: false
+build:
+  publishResources: false
 translationKey: japan-2026-destination-menu
 title: "Planning Japan 2026: Our Destination and Day-Trip Menu"
 subtitle: "34 places across South Korea and Japan, weighed before we lock a single date"
