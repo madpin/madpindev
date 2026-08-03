@@ -122,8 +122,10 @@ npx pagefind --site dist --serve
 Cloudflare Pages deploys the `main` branch through its Git integration. Configure the project with:
 
 - Production branch: `main`
-- Build command: `npm ci && npm run build`
+- Build command: `npm run build`
 - Output directory: `dist`
+
+Cloudflare installs dependencies automatically with `npm clean-install`; the committed `.npmrc` and lockfile resolve all packages through the public npm registry.
 - `NODE_VERSION`: `20.19.0`
 - `HUGO_VERSION`: `0.164.0`
 
