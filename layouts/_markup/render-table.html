@@ -1,0 +1,45 @@
+{{- /*
+  Custom table render hook.
+  - Wraps every table in a scrollable, keyboard-focusable container.
+  - Flags long tables (>= 12 body rows) so the header can be frozen with CSS.
+  - Detects image-gallery tables (cells containing figures/images) and marks
+    them so they render as a clean grid instead of a data table.
+  - Expresses column alignment as CSS classes, never inline styles, to satisfy
+    the site's Content-Security-Policy and html-validate no-inline-style rule.
+*/ -}}
+{{- $gallery := false -}}
+{{- if gt (len .TBody) 0 -}}
+  {{- range (index .TBody 0) -}}
+    {{- if findRE "<(img|figure|picture)" (.Text | string) 1 -}}
+      {{- $gallery = true -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $long := and (not $gallery) (ge (len .TBody) 12) -}}
+{{- $class := "table-scroll" -}}
+{{- if $long }}{{ $class = printf "%s is-long" $class }}{{ end -}}
+{{- if $gallery }}{{ $class = printf "%s is-gallery" $class }}{{ end -}}
+<div class="{{ $class }}"{{ if not $gallery }} tabindex="0"{{ end }}>
+<table
+{{- range $k, $v := .Attributes }}{{ if $v }}{{ printf " %s=%q" $k $v | safeHTMLAttr }}{{ end }}{{ end -}}
+>
+<thead>
+{{- range .THead }}
+<tr>
+{{- range . }}
+<th scope="col"{{ with .Alignment }}{{ if ne . "left" }}{{ printf " class=%q" (printf "is-%s" .) | safeHTMLAttr }}{{ end }}{{ end }}>{{ .Text }}</th>
+{{- end }}
+</tr>
+{{- end }}
+</thead>
+<tbody>
+{{- range .TBody }}
+<tr>
+{{- range . }}
+<td{{ with .Alignment }}{{ if ne . "left" }}{{ printf " class=%q" (printf "is-%s" .) | safeHTMLAttr }}{{ end }}{{ end }}>{{ .Text }}</td>
+{{- end }}
+</tr>
+{{- end }}
+</tbody>
+</table>
+</div>

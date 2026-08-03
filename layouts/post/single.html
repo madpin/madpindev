@@ -1,5 +1,11 @@
 {{ define "main" }}
   <article class="post page-shell" data-pagefind-body>
+    {{ if and (.Param "showtoc") (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") }}
+      <div class="reading-controls">
+        <input type="checkbox" id="wide-view" class="wide-view-checkbox">
+        <label for="wide-view" class="wide-view-toggle">{{ i18n "wideView" }}</label>
+      </div>
+    {{ end }}
     <div class="post-layout">
       <div class="prose post-content">
         {{ .Content }}

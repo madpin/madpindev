@@ -552,9 +552,49 @@ a:hover {
   color: var(--muted);
 }
 
+/* Admonitions are fully styled here (not only in the theme's injected
+   stylesheet) so they render correctly even when that stylesheet is blocked,
+   and so light/dark follows the site's design tokens. */
+.prose .admonition {
+  margin: 1.75rem 0;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
 .prose .admonition .admonition-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1rem;
+  border-bottom: 1px solid var(--border);
   background: var(--admonition-header-bg) !important;
   color: var(--admonition-header-text) !important;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-weight: 600;
+}
+
+/* Keep the icon small regardless of the theme's injected stylesheet; the global
+   svg { max-width: 100% } would otherwise blow it up to full width. */
+.prose .admonition .admonition-header svg {
+  flex: none;
+  width: 1.1em;
+  height: 1.1em;
+  fill: currentColor;
+}
+
+.prose .admonition .admonition-content {
+  padding: 1rem;
+  background: var(--background);
+  color: var(--text);
+}
+
+.prose .admonition .admonition-content > :first-child {
+  margin-top: 0;
+}
+
+.prose .admonition .admonition-content > :last-child {
+  margin-bottom: 0;
 }
 
 .prose .admonition .admonition-content code {
@@ -585,26 +625,123 @@ a:hover {
   font-size: 0.9em;
 }
 
-.prose table {
-  display: block;
-  width: max-content;
+/* Tables are wrapped by layouts/_markup/render-table.html in .table-scroll. */
+.prose .table-scroll {
+  margin: 1.75rem 0;
   max-width: 100%;
-  border-collapse: collapse;
-  overflow-x: auto;
-  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
-  font-size: 0.94rem;
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  -webkit-overflow-scrolling: touch;
 }
 
-.prose th,
-.prose td {
-  padding: 0.65rem 0.8rem;
-  border: 1px solid var(--border);
+.prose .table-scroll:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.prose .table-scroll table {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.92rem;
+}
+
+.prose .table-scroll th,
+.prose .table-scroll td {
+  padding: 0.6rem 0.85rem;
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
   text-align: left;
   vertical-align: top;
 }
 
-.prose th {
+.prose .table-scroll th:last-child,
+.prose .table-scroll td:last-child {
+  border-right: 0;
+}
+
+.prose .table-scroll tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.prose .table-scroll thead th {
   background: var(--surface-strong);
+  border-bottom: 2px solid var(--border);
+  font-weight: 600;
+}
+
+.prose .table-scroll tbody tr:nth-child(even) td {
+  background: var(--surface);
+}
+
+.prose .table-scroll tbody tr:hover td {
+  background: var(--surface-strong);
+}
+
+.prose .table-scroll .is-center {
+  text-align: center;
+}
+
+.prose .table-scroll .is-right {
+  text-align: right;
+}
+
+/* Frozen header: long tables scroll inside a capped box with a sticky header. */
+.prose .table-scroll.is-long {
+  max-height: 75vh;
+}
+
+.prose .table-scroll.is-long thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+/* Image-gallery tables render as a clean, borderless responsive grid. */
+.prose .table-scroll.is-gallery {
+  margin: 1.5rem 0;
+  border: 0;
+  border-radius: 0;
+  overflow: visible;
+}
+
+.prose .table-scroll.is-gallery table {
+  min-width: 0;
+  table-layout: fixed;
+}
+
+.prose .table-scroll.is-gallery th,
+.prose .table-scroll.is-gallery td {
+  padding: 0.3rem;
+  border: 0;
+  text-align: center;
+}
+
+.prose .table-scroll.is-gallery thead th {
+  background: none;
+  border: 0;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.82rem;
+}
+
+.prose .table-scroll.is-gallery tbody tr:nth-child(even) td,
+.prose .table-scroll.is-gallery tbody tr:hover td {
+  background: none;
+}
+
+.prose .table-scroll.is-gallery figure {
+  margin: 0;
+}
+
+.prose .table-scroll.is-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.4rem;
 }
 
 .prose figure {
@@ -636,6 +773,63 @@ a:hover {
 
 .post-layout:not(:has(.table-of-contents)) {
   grid-template-columns: minmax(0, var(--reading));
+}
+
+/* "Wide view" toggle: hides the contents sidebar and lets the post (and its
+   wide tables) use the full page width. Pure CSS via :has(), no persistence. */
+.reading-controls {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 1.25rem;
+}
+
+.wide-view-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.wide-view-toggle {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--muted);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.8rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.wide-view-checkbox:focus-visible + .wide-view-toggle {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.wide-view-checkbox:checked + .wide-view-toggle {
+  border-color: var(--accent-strong);
+  background: var(--accent-strong);
+  color: var(--button-text);
+}
+
+.post:has(.wide-view-checkbox:checked) .post-layout {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.post:has(.wide-view-checkbox:checked) .table-of-contents {
+  display: none;
+}
+
+.post:has(.wide-view-checkbox:checked) .post-content {
+  max-width: none;
 }
 
 .table-of-contents {
@@ -842,6 +1036,10 @@ a:hover {
 }
 
 @media (max-width: 64rem) {
+  .reading-controls {
+    display: none;
+  }
+
   .post-layout {
     grid-template-columns: minmax(0, var(--reading));
   }
