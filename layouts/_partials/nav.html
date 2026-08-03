@@ -17,6 +17,10 @@
         </div>
       </details>
       <a href="{{ "/search/" | relLangURL }}">{{ i18n "search" }}</a>
+      <button class="theme-toggle" type="button" data-theme-toggle data-light-label="{{ i18n "useLightBackground" }}" data-dark-label="{{ i18n "useDarkBackground" }}" aria-label="{{ i18n "useDarkBackground" }}" aria-pressed="false">
+        <span class="theme-toggle-icon" data-theme-icon aria-hidden="true">◐</span>
+        <span class="theme-toggle-label" data-theme-label>{{ i18n "useDarkBackground" }}</span>
+      </button>
       {{ if gt (len .AllTranslations) 1 }}
         <span class="language-links" role="group" aria-label="{{ i18n "languages" }}">
           {{ range .AllTranslations }}<a href="{{ .RelPermalink }}" hreflang="{{ .Language.Locale }}" lang="{{ .Language.Locale }}"{{ if eq .Language.Lang site.Language.Lang }} aria-current="page"{{ end }}>{{ .Language.Label }}</a>{{ end }}
