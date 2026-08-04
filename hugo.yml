@@ -71,6 +71,10 @@ markup:
     style: dracula
     noClasses: false
   goldmark:
+    parser:
+      # Emit a standalone image as a block-level <figure> (from the image render
+      # hook) instead of wrapping it in a <p>, which produces invalid HTML.
+      wrapStandAloneImageWithinParagraph: false
     renderer:
       unsafe: false
 
