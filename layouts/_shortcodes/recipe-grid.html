@@ -1,0 +1,109 @@
+{{- /*
+  Cooking-for-Engineers style recipe grid.
+
+  Renders ingredients down the left column and operations as merged cells to
+  the right, so the whole recipe — ingredients, quantities, operations and
+  timings — reads as one diagram instead of a numbered list.
+
+  Takes YAML in the shortcode body:
+
+    caption:     accessible table caption (required)
+    before:      list of full-width setup rows, rendered above the grid
+    after:       list of full-width finishing rows, rendered below the grid
+    ingredients: ordered list of strings, one per row
+    steps:       list of {col, from, to, label, time}
+                 col  = 1-based operation column
+                 from/to = inclusive 1-based ingredient rows the step spans
+
+  Geometry: an ingredient cell absorbs every free operation column immediately
+  to its right, which is what produces the stepped outline of the reference
+  format. Any remaining gap behind an occupied column is emitted as an empty
+  cell so every row covers the full width exactly once.
+
+  Emits no inline styles — alignment and borders are CSS classes, per the
+  site's Content-Security-Policy and the html-validate no-inline-style rule.
+*/ -}}
+
+{{- $d := .Inner | transform.Unmarshal -}}
+{{- $ings := $d.ingredients -}}
+{{- $steps := default slice $d.steps -}}
+{{- $nrows := len $ings -}}
+
+{{- if eq $nrows 0 -}}
+  {{- errorf "recipe-grid (%s): no ingredients given" .Page.File.Path -}}
+{{- end -}}
+
+{{- /* Widest operation column in use. */ -}}
+{{- $ncols := 0 -}}
+{{- range $steps -}}
+  {{- if gt .col $ncols }}{{ $ncols = .col }}{{ end -}}
+  {{- if or (lt .from 1) (gt .to $nrows) -}}
+    {{- errorf "recipe-grid (%s): step %q spans rows %d-%d, outside 1-%d" $.Page.File.Path .label .from .to $nrows -}}
+  {{- end -}}
+  {{- if gt .from .to -}}
+    {{- errorf "recipe-grid (%s): step %q has from > to" $.Page.File.Path .label -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Occupancy map: "row-col" is covered, and which step starts there. */ -}}
+{{- $occ := newScratch -}}
+{{- $start := newScratch -}}
+{{- range $s := $steps -}}
+  {{- $start.Set (printf "%d-%d" $s.from $s.col) $s -}}
+  {{- range $r := seq $s.from $s.to -}}
+    {{- $k := printf "%d-%d" $r $s.col -}}
+    {{- if $occ.Get $k -}}
+      {{- errorf "recipe-grid (%s): two steps overlap at row %d, column %d" $.Page.File.Path $r $s.col -}}
+    {{- end -}}
+    {{- $occ.Set $k true -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $total := add $ncols 1 -}}
+<div class="table-scroll recipe-grid" tabindex="0">
+<table>
+<caption>{{ $d.caption }}</caption>
+<tbody>
+{{- range $d.before }}
+<tr><td class="is-setup" colspan="{{ $total }}">{{ . }}</td></tr>
+{{- end }}
+{{- range $r := seq 1 $nrows }}
+  {{- /* Ingredient cell swallows the run of free columns to its right. */ -}}
+  {{- $span := 1 -}}
+  {{- $open := true -}}
+  {{- if gt $ncols 0 -}}
+    {{- range $c := seq 1 $ncols -}}
+      {{- if $open -}}
+        {{- if $occ.Get (printf "%d-%d" $r $c) -}}
+          {{- $open = false -}}
+        {{- else -}}
+          {{- $span = add $span 1 -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end }}
+<tr>
+<td class="is-ingredient"{{ if gt $span 1 }} colspan="{{ $span }}"{{ end }}>{{ index $ings (sub $r 1) }}</td>
+  {{- if gt $ncols 0 -}}
+    {{- range $c := seq 1 $ncols -}}
+      {{- $k := printf "%d-%d" $r $c -}}
+      {{- $s := $start.Get $k -}}
+      {{- if $s -}}
+        {{- $rs := add (sub $s.to $s.from) 1 }}
+<td class="is-op"{{ if gt $rs 1 }} rowspan="{{ $rs }}"{{ end }}>{{ $s.label }}{{ with $s.time }}<span class="op-time">{{ . }}</span>{{ end }}</td>
+      {{- else if $occ.Get $k -}}
+        {{- /* continuation of a rowspan above */ -}}
+      {{- else if ge $c $span -}}
+        {{- /* free, and not absorbed by the ingredient cell */}}
+<td class="is-blank"></td>
+      {{- end -}}
+    {{- end -}}
+  {{- end }}
+</tr>
+{{- end }}
+{{- range $d.after }}
+<tr><td class="is-setup" colspan="{{ $total }}">{{ . }}</td></tr>
+{{- end }}
+</tbody>
+</table>
+</div>

@@ -98,12 +98,51 @@ Runs against the built `dist/`:
 
 ## Templates and assets
 
-- **Layout paths are Hugo 0.146+ style**: `layouts/baseof.html`, `layouts/page.html`, `layouts/_partials/`, `layouts/_markup/`. Do **not** create `layouts/_default/`. The vendored theme still uses the legacy path — that is expected, not a bug to fix.
+- **Layout paths are Hugo 0.146+ style**: `layouts/baseof.html`, `layouts/page.html`, `layouts/_partials/`, `layouts/_markup/`, `layouts/_shortcodes/`. Do **not** create `layouts/_default/`, and do not use the empty legacy `layouts/shortcodes/`. The vendored theme still uses the legacy path — that is expected, not a bug to fix.
 - **Asset pipeline** is always `resources.Get … | minify | fingerprint` with an `integrity` attribute — see `layouts/_partials/head.html:43-48` and `layouts/baseof.html:15-17`.
 - **Page-scoped assets** go in `{{ define "page_styles" }}` / `{{ define "page_scripts" }}` blocks, not in the shared bundle. See `layouts/tools/adhd.html:1-4`.
 - **Tool pages select their layout from front matter**: `type: tools` + `layout: adhd|acls` + `hideHero: true` resolves `layouts/tools/<layout>.html`. See `content/adhd-assessment/index.md`.
 - **Render hooks**: `layouts/_markup/render-image.html` emits responsive WebP (480/800/1280) inside a `<figure>`; `layouts/_markup/render-table.html` adds the scroll wrapper and gallery/long-table detection.
 - **The theme is vendored, not a submodule.** `themes/hugo-admonitions/` is checked into the tree (there is no `.gitmodules`) and already carries local modifications. Editing it is editing vendored code — say so in the commit message.
+
+## Recipe grids — `layouts/_shortcodes/recipe-grid.html`
+
+Recipe posts carry an "ADHD-friendly table": a Cooking-for-Engineers operations grid, with ingredients and quantities down the left column and operations to the right as merged `rowspan` cells spanning the rows they consume. The point is to show the whole recipe at once — what merges with what, which branches are independent, and where the long unattended waits are — instead of making the reader hold a sequence in working memory.
+
+It has to be a shortcode. Markdown pipe tables cannot express `rowspan`, and a raw `<table>` in a post body is **silently dropped** by `unsafe: false`. Shortcode output is substituted back after Goldmark runs, so it escapes that filter.
+
+The body is YAML:
+
+```text
+{{< recipe-grid >}}
+caption: "Grid 1 — the dough"        # required, becomes <caption>
+before:                              # optional, full-width rows above the grid
+  - "Grease a 23 × 13 cm (9 × 5 in) loaf pan"
+ingredients:                         # one row each, in order
+  - "291 g (2⅓ cups) all-purpose flour"
+  - "1 large egg"
+steps:
+  - col: 1                           # 1-based operation column
+    from: 1                          # inclusive 1-based ingredient rows spanned
+    to: 2
+    label: "whisk"
+    time: "5–10 min"                 # optional, renders muted beneath the label
+after:                               # optional, full-width rows below the grid
+  - "Cool 10 min in the pan"
+{{< /recipe-grid >}}
+```
+
+Two rules `make verify` cannot check for you:
+
+- **Pack a sub-assembly into a column that an earlier step has vacated.** An ingredient cell only absorbs the run of free columns *immediately* to its right — that is what produces the stepped outline. A free column sitting behind an occupied one becomes an empty filler cell instead. Putting a filling's `mix` in the same column the dough's first rise vacates keeps the grid hole-free.
+- **Six columns — one ingredient plus five operations — is the ceiling.** The `.prose` column measures 830 px; seven columns needed 896 px and silently clipped the last one off the right edge. Merge trivial operations rather than adding a column. Better still, use one grid per sub-recipe (dough / filling / assembly): narrower grids read far better, and a later grid can take an earlier one as an ingredient — `"the risen dough, from grid 1"`.
+
+The shortcode `errorf`s — and so fails the build — on an empty ingredient list, a step spanning rows outside that list, `from > to`, and two steps overlapping in one column. It cannot detect a grid that is merely *wrong*: mis-computed spans are still valid HTML and still pass `check:html`. Verify a new grid by replaying the rendered table into a 2-D array and asserting `Σ(rowspan × colspan) == rows × cols` with no cell written twice, then comparing `scrollWidth` against `clientWidth` in a browser to catch clipping.
+
+Styles are `.table-scroll.recipe-grid` in `assets/css/main.css:747`. They deliberately override the shared `.table-scroll` data-table treatment: row striping and `vertical-align: top` both assume one cell per row and mis-render merged cells. Add scoped rules there rather than editing the shared ones — axe runs over other pages that have ordinary tables. A shortcode cannot reach a `page_styles` block, which is why these live in the main bundle.
+
+Worked example: `content/post/rosemary-garlic-pull-apart-bread/index.en.md`.
+
 
 ## i18n is dual-file
 

@@ -744,6 +744,71 @@ a:hover {
   border-radius: 0.4rem;
 }
 
+/* Cooking-for-Engineers recipe grid, emitted by layouts/_shortcodes/recipe-grid.html.
+   Ingredients run down the left; operations are merged cells spanning the rows
+   they consume. Overrides the shared .table-scroll data-table treatment, which
+   assumes one cell per row and would stripe the merged cells inconsistently. */
+.prose .table-scroll.recipe-grid table {
+  min-width: 42rem;
+  font-size: 0.86rem;
+}
+
+.prose .table-scroll.recipe-grid caption {
+  padding: 0.7rem 0.85rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface-strong);
+  color: var(--text);
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Merged cells must not inherit row striping or hover: both key off the row a
+   cell starts in, which would tint operation cells at random. */
+.prose .table-scroll.recipe-grid tbody tr:nth-child(even) td,
+.prose .table-scroll.recipe-grid tbody tr:hover td {
+  background: none;
+}
+
+.prose .table-scroll.recipe-grid td {
+  border-right: 1px solid var(--border);
+}
+
+.prose .table-scroll.recipe-grid .is-ingredient {
+  vertical-align: middle;
+  width: 30%;
+  min-width: 11rem;
+}
+
+/* Operations centre in their merged span, matching the reference format. */
+.prose .table-scroll.recipe-grid .is-op {
+  vertical-align: middle;
+  text-align: center;
+  background: var(--surface);
+  padding: 0.6rem 0.5rem;
+  min-width: 7.5rem;
+  font-weight: 600;
+  white-space: normal;
+}
+
+.prose .table-scroll.recipe-grid .op-time {
+  display: block;
+  margin-top: 0.15rem;
+  color: var(--muted);
+  font-weight: 400;
+  font-size: 0.82rem;
+}
+
+.prose .table-scroll.recipe-grid .is-setup {
+  background: var(--surface-strong);
+  font-weight: 600;
+  text-align: center;
+}
+
+.prose .table-scroll.recipe-grid .is-blank {
+  background: none;
+}
+
+
 .prose figure {
   margin: 2rem 0;
 }
