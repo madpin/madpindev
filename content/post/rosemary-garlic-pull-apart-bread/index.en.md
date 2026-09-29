@@ -6,7 +6,7 @@ title: Rosemary Garlic Pull-Apart Bread
 subtitle: Twelve folded rounds of herb butter, and the reason every ingredient is in there
 description: A homemade rosemary garlic pull-apart loaf explained ingredient by ingredient, with three ADHD-friendly recipe grids and notes from the bake where two small eggs meant more flour.
 date: 2026-09-28
-lastmod: 2026-09-28
+lastmod: 2026-09-29
 slug: rosemary-garlic-pull-apart-bread
 author: Thiago MadPin
 image: cover.jpg
@@ -44,25 +44,25 @@ The recipe is adapted from [Sally's rosemary garlic pull-apart bread](https://sa
 
 | Ingredient | Quantity | What it does |
 | --- | --- | --- |
-| Instant yeast | 2 teaspoons | Eats the sugars and exhales carbon dioxide and ethanol. The gas inflates the dough, the ethanol and its by-products supply most of the flavour |
-| Granulated sugar | 1 tablespoon | Gives the yeast an immediately available meal during the bloom, then helps the crust brown |
-| Whole milk, warmed to 43 °C | 180 ml (¾ cup) | Hydrates the flour so gluten can form. Milk rather than water adds fat for softness, sugars for browning, and proteins that keep the crumb tender |
+| Instant yeast | 2 teaspoons (6 g) | Eats the sugars and exhales carbon dioxide and ethanol. The gas inflates the dough, the ethanol and its by-products supply most of the flavour |
+| Granulated sugar | 1 tablespoon (12½ g) | Gives the yeast an immediately available meal during the bloom, then helps the crust brown |
+| Whole milk, warmed to 43 °C | 185 g (180 ml, ¾ cup) | Hydrates the flour so gluten can form. Milk rather than water adds fat for softness, sugars for browning, and proteins that keep the crumb tender |
 | Unsalted butter, softened | 3 tablespoons (43 g) | Coats gluten strands so they slide past each other, which is what makes an enriched dough pillowy instead of crusty |
-| Large egg | 1 | The richness. Yolk brings fat and lecithin for a tender crumb that stays soft; white brings protein for structure and a deeper crust colour |
+| Large egg | 1 (50 g) | The richness. Yolk brings fat and lecithin for a tender crumb that stays soft; white brings protein for structure and a deeper crust colour |
 | All-purpose flour | 291 g (2⅓ cups), plus more as needed | Supplies the gluten proteins that trap gas and give the crumb its chew. All-purpose is deliberate — bread flour would make this tougher than a pull-apart loaf wants to be |
-| Salt | 1 teaspoon | Seasons, tightens the gluten network, and slows the yeast so the rise is steady rather than frantic |
-| Garlic powder | 1 teaspoon | Background garlic, evenly distributed through every crumb. Dehydrated garlic survives a 50-minute bake without scorching, which fresh garlic in the dough would not |
-| Fresh rosemary, finely chopped | 1 tablespoon | Puts the herb *inside* the bread rather than only between the layers, so you taste it even in a bite that misses the butter |
+| Salt | 1 teaspoon (6 g) | Seasons, tightens the gluten network, and slows the yeast so the rise is steady rather than frantic |
+| Garlic powder | 1 teaspoon (3 g) | Background garlic, evenly distributed through every crumb. Dehydrated garlic survives a 50-minute bake without scorching, which fresh garlic in the dough would not |
+| Fresh rosemary, finely chopped | 1 tablespoon (2 g) | Puts the herb *inside* the bread rather than only between the layers, so you taste it even in a bite that misses the butter |
 
 ### The Herb Butter and Cheese
 
 | Ingredient | Quantity | What it does |
 | --- | --- | --- |
 | Unsalted butter, extra soft | 71 g (5 tablespoons) | The layer separator. It keeps each fold from welding shut, so the loaf pulls apart cleanly, and it carries the herbs and garlic into the crumb |
-| Fresh rosemary, finely chopped | 1 tablespoon | The headline flavour. Its aromatic oils are fat-soluble, so butter is exactly the right vehicle |
-| Fresh parsley, finely chopped | 1 tablespoon | Cuts the richness and stops the loaf reading as purely beige |
-| Garlic cloves, minced | 2 | Raw and sharp, which is the point — this is the bright garlic note that powder cannot give you |
-| Salt | ¼ teaspoon | Seasons the butter itself. Most of the seasoning you taste comes from here, not from the dough |
+| Fresh rosemary, finely chopped | 1 tablespoon (2 g) | The headline flavour. Its aromatic oils are fat-soluble, so butter is exactly the right vehicle |
+| Fresh parsley, finely chopped | 1 tablespoon (4 g) | Cuts the richness and stops the loaf reading as purely beige |
+| Garlic cloves, minced | 2 (about 10 g) | Raw and sharp, which is the point — this is the bright garlic note that powder cannot give you |
+| Salt | ¼ teaspoon (1½ g) | Seasons the butter itself. Most of the seasoning you taste comes from here, not from the dough |
 | Shredded parmesan, mozzarella, or white cheddar | 95 g (¾ cup) | Savoury depth and browned, crisp edges where it escapes. Parmesan is the sharpest, mozzarella the stretchiest, white cheddar somewhere between |
 
 ### The Finish
@@ -70,7 +70,7 @@ The recipe is adapted from [Sally's rosemary garlic pull-apart bread](https://sa
 | Ingredient | Quantity | What it does |
 | --- | --- | --- |
 | Unsalted butter, melted | 1 tablespoon (14 g) | Brushed on hot, it softens the crust and gives the loaf its gloss |
-| Coarse or flaky sea salt | A pinch | Lands on the surface undissolved, so you get bright salt hits rather than uniform saltiness |
+| Coarse or flaky sea salt | A pinch (about 1 g) | Lands on the surface undissolved, so you get bright salt hits rather than uniform saltiness |
 
 > [!TIP]
 > Shred the cheese yourself. Bagged shredded cheese is dusted with starch or cellulose to stop it clumping, and that coating shows up as a slightly grainy, less clean melt.
@@ -86,15 +86,15 @@ Splitting it into three means you never have to hold the whole thing at once. Ea
 {{< recipe-grid >}}
 caption: "Grid 1 — the dough"
 ingredients:
-  - "2 tsp instant yeast"
-  - "1 Tbsp granulated sugar"
-  - "180 ml (¾ cup) whole milk, warmed to 43 °C (110 °F)"
+  - "2 tsp (6 g) instant yeast"
+  - "1 Tbsp (12½ g) granulated sugar"
+  - "185 g (180 ml, ¾ cup) whole milk, warmed to 43 °C (110 °F)"
   - "3 Tbsp (43 g) unsalted butter, softened"
-  - "1 large egg"
+  - "1 large egg (50 g)"
   - "291 g (2⅓ cups) all-purpose flour, plus more as needed"
-  - "1 tsp salt"
-  - "1 tsp garlic powder"
-  - "1 Tbsp fresh rosemary, finely chopped"
+  - "1 tsp (6 g) salt"
+  - "1 tsp (3 g) garlic powder"
+  - "1 Tbsp (2 g) fresh rosemary, finely chopped"
 steps:
   - col: 1
     from: 1
@@ -126,10 +126,10 @@ The dough should stay soft and a little tacky. Add flour a tablespoon at a time 
 caption: "Grid 2 — the filling, made during the first rise"
 ingredients:
   - "71 g (5 Tbsp) unsalted butter, extra soft"
-  - "1 Tbsp fresh rosemary, finely chopped"
-  - "1 Tbsp fresh parsley, finely chopped"
-  - "2 garlic cloves, minced"
-  - "¼ tsp salt"
+  - "1 Tbsp (2 g) fresh rosemary, finely chopped"
+  - "1 Tbsp (4 g) fresh parsley, finely chopped"
+  - "2 garlic cloves (about 10 g), minced"
+  - "¼ tsp (1½ g) salt"
   - "95 g (¾ cup) shredded parmesan, mozzarella or white cheddar"
 steps:
   - col: 1
@@ -162,11 +162,11 @@ steps:
   - col: 2
     from: 1
     to: 2
-    label: "spread 1–2 tsp on each round"
+    label: "spread 1–2 tsp (5–9 g) on each round"
   - col: 3
     from: 1
     to: 3
-    label: "sprinkle 1 Tbsp on each · fold in half"
+    label: "sprinkle 1 Tbsp (8 g) on each · fold in half"
   - col: 4
     from: 1
     to: 3
@@ -178,7 +178,7 @@ steps:
     label: "bake at 177 °C"
     time: "about 50 min"
 after:
-  - "Brush with 1 Tbsp (14 g) melted butter · sprinkle flaky sea salt · cool 10 min in the pan"
+  - "Brush with 1 Tbsp (14 g) melted butter · sprinkle a pinch (about 1 g) of flaky sea salt · cool 10 min in the pan"
 {{< /recipe-grid >}}
 
 Three things these grids make obvious that a numbered list hides.
@@ -222,7 +222,7 @@ Grease the loaf pan.
 
 Punch the dough down and divide it into **12 equal pieces**, each about a quarter cup and a little bigger than a golf ball. With floured hands, flatten each into a round about **10 cm (4 inches)** across. They do not need to be perfect circles.
 
-Spread **1–2 teaspoons** of herb butter onto each round, sprinkle each with about **1 tablespoon** of cheese, then **fold the round in half**.
+Spread **1–2 teaspoons (5–9 g)** of herb butter onto each round, sprinkle each with about **1 tablespoon (8 g)** of cheese, then **fold the round in half**.
 
 Line the folded half-moons up in the pan, **round side up**, standing against each other.
 
@@ -243,7 +243,7 @@ Melted butter around the sides of the loaf during baking is normal. It soaks bac
 
 ### 7. Finish
 
-Move the pan to a wire rack. Brush the top with melted butter and sprinkle with flaky sea salt. Cool for **10 minutes in the pan**, then turn it out and serve warm.
+Move the pan to a wire rack. Brush the top with the melted butter (14 g) and sprinkle with a pinch (about 1 g) of flaky sea salt. Cool for **10 minutes in the pan**, then turn it out and serve warm.
 
 ## 🥚 My Version: Two Small Eggs and More Flour
 
