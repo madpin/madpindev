@@ -8,13 +8,13 @@ title: Pão de Queijo de Frigideira
 subtitle: Pão de queijo rápido e fácil feito na frigideira
 description: Uma receita rápida e sem glúten de pão de queijo de frigideira com tapioca, parmesão e mussarela.
 date: 2024-12-15
-lastmod: 2024-12-15
+lastmod: 2026-09-30
 slug: frying-pan-brazilian-cheese-bread
 author: Thiago MadPin
 image: cover.png
 imageAlt: Pão de queijo de frigideira pronto para servir
 categories: [Receitas]
-tags: [comida, queijo, comida-brasileira]
+tags: [recipe, pao-de-queijo, queijo, comida-brasileira, tapioca, sem-gluten, tdah]
 ---
 
 Uma receita rápida e fácil de pão de queijo brasileiro, feita na frigideira em vez do método tradicional assado no forno. Esta receita combina farinha de tapioca com queijo parmesão e mussarela para criar um pão delicioso, sem glúten, crocante por fora e macio por dentro. Perfeito para o café da manhã ou como lanche, esta versão simplificada leva apenas 16 minutos para preparar e cozinhar, tornando-se uma maneira acessível de desfrutar desta delícia brasileira em casa.
@@ -38,6 +38,40 @@ Uma receita rápida e fácil de pão de queijo brasileiro, feita na frigideira e
 | Queijo Mussarela | 30g    | 52.6%                  |
 | Sal              | 3g     | 5.3%                   |
 | **Peso Total:**  | 180g   |                        |
+
+## A Receita em Uma Figura
+
+Ingredientes e quantidades na coluna da esquerda, operações fundidas nas linhas que elas consomem. Leia uma linha para a direita para ver onde aquele ingrediente vai parar; leia uma célula para baixo para ver tudo o que entra nela.
+
+Uma tigela, depois a frigideira. O queijo extra é recheio, não entra na massa, então fica embaixo da grade em vez de ir para a mistura.
+
+{{< recipe-grid >}}
+caption: "Uma frigideira — cerca de 16 minutos"
+before:
+  - "Frigideira antiaderente, em fogo médio"
+ingredients:
+  - "57g de ovo (1 grande)"
+  - "60g de tapioca"
+  - "30g de parmesão ralado"
+  - "30g de mussarela ralada"
+  - "3g de sal"
+steps:
+  - col: 1
+    from: 1
+    to: 5
+    label: "misture até formar uma massa lisa"
+  - col: 2
+    from: 1
+    to: 5
+    label: "despeje · cozinhe até a base firmar e soltar"
+  - col: 3
+    from: 1
+    to: 5
+    label: "vire · cozinhe até dourar"
+after:
+  - "Recheio opcional: mais mussarela ou cream cheese light, tampe até derreter e dobre ao meio, como um pastel"
+  - "Ou dobre sem recheio e sirva"
+{{< /recipe-grid >}}
 
 **Modo de Preparo:**
 

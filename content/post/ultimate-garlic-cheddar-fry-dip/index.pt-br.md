@@ -8,13 +8,13 @@ title: Molho Supremo de Alho e Cheddar para Batatas Fritas
 subtitle: Cremoso, cheio de alho e com aquele clima gostoso de porção no meio da mesa
 description: Faça um molho cremoso de alho e queijo no fogão ou no micro-ondas, com substituições fáceis para o cheddar e ciência explicada sem tirar a graça.
 date: 2026-08-03
-lastmod: 2026-08-03
+lastmod: 2026-09-30
 slug: ultimate-garlic-cheddar-fry-dip
 author: Thiago MadPin
 image: cover.png
 imageAlt: Molho dourado de alho e cheddar em uma tigela com batatas fritas crocantes
 categories: [Receitas]
-tags: [queijo, alho, molho, ciencia-dos-alimentos]
+tags: [recipe, queijo, alho, molho, ciencia-dos-alimentos, tdah]
 ---
 
 Sabe aquela porção de batata frita que chega no meio da mesa e faz todo mundo se inclinar ao mesmo tempo? Este é o molho para esse momento: quente, cremoso, cheio de alho e com grandes chances de provocar a clássica discussão sobre quem ficou com a última batata.
@@ -64,6 +64,81 @@ No lugar dos **115g de cheddar light**, use:
 > Mantenha os **80g de queijo processado em fatias** em qualquer uma dessas versões. São eles que fornecem os sais emulsificantes responsáveis por segurar o molho. E prove antes de colocar sal: parmesão e fatias processadas já chegam à panela fazendo bastante barulho nesse departamento.
 
 Queijo minas padrão ou meia-cura também pode entrar no lugar de parte do queijo prato, desde que derreta bem. Evite queijo coalho nesta receita: ele foi feito para manter a forma com o calor, justamente o oposto do que queremos aqui.
+
+## 🧠 A Receita em Duas Figuras
+
+Ingredientes e quantidades na coluna da esquerda, operações fundidas nas linhas que elas consomem. Leia uma linha para a direita para ver onde aquele ingrediente vai parar; leia uma célula para baixo para ver tudo o que entra nela.
+
+As duas grades são o mesmo molho. Só muda a fonte de calor. O queijo processado continua entrando antes do ralado, e o ralado continua entrando com o fogo desligado.
+
+### Fogão
+
+{{< recipe-grid >}}
+caption: "Fogão — uma panela pequena, cerca de 5 minutos"
+before:
+  - "Panela pequena em fogo médio-baixo"
+ingredients:
+  - "15g de manteiga"
+  - "8g de alho fresco bem picado ou ralado"
+  - "80g de leite semidesnatado"
+  - "80g (cerca de 4 fatias) de queijo processado, em pedaços"
+  - "115g de cheddar light ralado na hora, ou a combinação brasileira acima"
+steps:
+  - col: 1
+    from: 1
+    to: 2
+    label: "derreta · cozinhe até perfumar, sem dourar"
+    time: "30–40 s"
+  - col: 2
+    from: 1
+    to: 3
+    label: "misture até aquecer e soltar vapor · não deixe ferver"
+  - col: 3
+    from: 1
+    to: 4
+    label: "acrescente aos poucos · mexa até ficar liso"
+  - col: 4
+    from: 1
+    to: 5
+    label: "fogo desligado · entre em 2–3 porções · mexa até brilhar"
+after:
+  - "Sirva na hora · se engrossar, leite morno, 1 colher de chá por vez"
+{{< /recipe-grid >}}
+
+### Micro-ondas
+
+{{< recipe-grid >}}
+caption: "Micro-ondas — a mesma ordem, uma tigela no lugar da panela"
+before:
+  - "Tigela própria para micro-ondas, de pelo menos 1 litro, para mexer sem redecorar o aparelho"
+ingredients:
+  - "15g de manteiga"
+  - "8g de alho fresco bem picado ou ralado"
+  - "80g de leite semidesnatado"
+  - "80g (cerca de 4 fatias) de queijo processado, em pedaços"
+  - "115g de cheddar light ralado na hora, ou a combinação brasileira acima"
+steps:
+  - col: 1
+    from: 1
+    to: 2
+    label: "20 s · mexa · mais 10–20 s, perfumado sem dourar"
+  - col: 2
+    from: 1
+    to: 3
+    label: "misture · aqueça até ficar quente, sem ferver"
+    time: "30–45 s"
+  - col: 3
+    from: 1
+    to: 4
+    label: "rajadas de 15 s, mexendo após cada uma, até ficar liso"
+    time: "45–75 s"
+  - col: 4
+    from: 1
+    to: 5
+    label: "entre em 2–3 porções · mexa · uma rajada de 10 s só se precisar"
+after:
+  - "Descanse 30 s · mexa · sirva"
+{{< /recipe-grid >}}
 
 ## 🍳 Modo de Preparo no Fogão
 

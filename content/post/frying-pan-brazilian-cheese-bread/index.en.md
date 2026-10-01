@@ -8,13 +8,13 @@ title: Frying Pan Brazilian Cheese Bread
 subtitle: Quick and easy pão de queijo in a frying pan
 description: A fast gluten-free Brazilian cheese bread made in a frying pan with tapioca flour, parmesan, and mozzarella.
 date: 2024-12-15
-lastmod: 2024-12-15
+lastmod: 2026-09-30
 slug: frying-pan-brazilian-cheese-bread
 author: Thiago MadPin
 image: cover.png
 imageAlt: Frying pan Brazilian cheese bread ready to serve
 categories: [Recipes]
-tags: [food, cheese, brazilian-food]
+tags: [recipe, pao-de-queijo, cheese, brazilian-food, tapioca, gluten-free, adhd]
 ---
 A quick and easy Brazilian cheese bread recipe made in a frying pan instead of the traditional oven-baked method. This recipe combines tapioca flour with parmesan and mozzarella cheese to create a delicious, gluten-free bread that's crispy on the outside and chewy on the inside. Perfect for breakfast or as a snack, this simplified version takes only 16 minutes to prepare and cook, making it an accessible way to enjoy this Brazilian favorite at home.
 
@@ -37,6 +37,40 @@ A quick and easy Brazilian cheese bread recipe made in a frying pan instead of t
 | Mozzarella Cheese | 30g   | 52.6%              |
 | Salt              | 3g    | 5.3%               |
 | **Total Weight:** | 180g  |                    |
+
+## **The Recipe in One Picture**
+
+Ingredients with quantities down the left, operations merged across the rows they consume. Read a row rightwards to see where that ingredient ends up; read a cell downwards to see everything that goes into it.
+
+One bowl, then the skillet. Extra cheese is a filling, not part of the batter, so it sits under the grid instead of in the mix.
+
+{{< recipe-grid >}}
+caption: "One skillet — about 16 minutes"
+before:
+  - "Non-stick skillet over medium heat"
+ingredients:
+  - "57g egg (1 large)"
+  - "60g tapioca flour"
+  - "30g Parmesan, grated"
+  - "30g mozzarella, grated"
+  - "3g salt"
+steps:
+  - col: 1
+    from: 1
+    to: 5
+    label: "mix to a smooth batter"
+  - col: 2
+    from: 1
+    to: 5
+    label: "pour in · cook until the bottom sets and releases"
+  - col: 3
+    from: 1
+    to: 5
+    label: "flip · cook until golden"
+after:
+  - "Optional filling: more mozzarella or light cream cheese, cover until it melts, then fold in half like a pastel"
+  - "Or fold it plain and serve"
+{{< /recipe-grid >}}
 
 ## **Method:**
 1. Combine all ingredients thoroughly in a bowl.

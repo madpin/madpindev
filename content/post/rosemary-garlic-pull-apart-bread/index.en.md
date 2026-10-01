@@ -6,13 +6,13 @@ title: Rosemary Garlic Pull-Apart Bread
 subtitle: Twelve folded rounds of herb butter, and the reason every ingredient is in there
 description: A homemade rosemary garlic pull-apart loaf explained ingredient by ingredient, with three ADHD-friendly recipe grids and notes from the bake where two small eggs meant more flour.
 date: 2026-09-28
-lastmod: 2026-09-29
+lastmod: 2026-09-30
 slug: rosemary-garlic-pull-apart-bread
 author: Thiago MadPin
 image: cover.jpg
 imageAlt: A baked rosemary garlic pull-apart loaf turned out onto a tray, its folded layers fanned open and flecked with flaky salt
 categories: [Recipes]
-tags: [bread, rosemary, garlic, baking, food-science, adhd]
+tags: [recipe, bread, rosemary, garlic, baking, food-science, adhd]
 ---
 
 There is a specific kind of bread that does not get sliced. You tear a piece off the top, someone else takes the next one, and within four minutes the loaf has been disassembled by hand and nobody feels bad about it.

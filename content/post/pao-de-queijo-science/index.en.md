@@ -7,13 +7,13 @@ title: The Science and Secrets of Brazilian Pão de Queijo
 subtitle: Authentic Brazilian cheese bread, deliciously explained
 description: The history and food science behind pão de queijo, plus a practical recipe for making crisp, chewy Brazilian cheese bread at home.
 date: 2024-12-16
-lastmod: 2024-12-16
+lastmod: 2026-09-30
 slug: pao-de-queijo-science
 author: Thiago MadPin
 image: cover.png
 imageAlt: Freshly baked Brazilian pão de queijo
 categories: [Recipes]
-tags: [food, cheese, brazilian-food]
+tags: [recipe, pao-de-queijo, cheese, brazilian-food, baking, food-science, gluten-free, adhd]
 aliases:
   - /2024/12/16-the-magical-cheese-bread-from-brazil-my-po-de-queijo-adventure/
 ---
@@ -79,6 +79,76 @@ Now that we know the science, let's bake! Here's a wonderfully straightforward a
 
 > [!TIP]
 > Can't find Meia Cura cheese? Substitute half mild cheddar and half low-moisture mozzarella for similar delicious results!
+
+## The Recipe as Two Small Jobs
+
+Ingredients with quantities down the left, operations merged across the rows they consume. Read a row rightwards to see where that ingredient ends up; read a cell downwards to see everything that goes into it.
+
+Grid 1 makes the dough. Grid 2 starts only when that dough is just warm, because hotter starch would cook the eggs on contact. The first column is two independent jobs — whisk the starches, and heat the milk and fat — and they meet in the next cell, so neither one has to wait on the other.
+
+### 1 · The Starch Dough
+
+{{< recipe-grid >}}
+caption: "Grid 1 — the starch dough"
+before:
+  - "Heat the oven to 200°C (392°F) · line trays with parchment · grate the cheeses"
+ingredients:
+  - "500g sour cassava starch (polvilho azedo)"
+  - "500g sweet cassava starch (polvilho doce)"
+  - "10g salt"
+  - "600g whole milk"
+  - "150g vegetable oil or unsalted butter"
+steps:
+  - col: 1
+    from: 1
+    to: 3
+    label: "whisk until combined"
+  - col: 1
+    from: 4
+    to: 5
+    label: "heat to 45–50°C · do not boil"
+  - col: 2
+    from: 1
+    to: 5
+    label: "pour the hot liquid over the starches · mix until smooth"
+  - col: 3
+    from: 1
+    to: 5
+    label: "cool until just warm, so the eggs will not cook"
+    time: "5–10 min"
+{{< /recipe-grid >}}
+
+### 2 · Eggs, Cheese, and the Bake
+
+{{< recipe-grid >}}
+caption: "Grid 2 — eggs, cheese, and the bake"
+ingredients:
+  - "the warm starch dough, from grid 1"
+  - "200g eggs (about 4 medium)"
+  - "600g Meia Cura, grated"
+  - "100g Parmesan, freshly grated"
+steps:
+  - col: 1
+    from: 1
+    to: 2
+    label: "add one at a time until smooth and glossy"
+  - col: 2
+    from: 1
+    to: 4
+    label: "fold in until cohesive and slightly sticky"
+  - col: 3
+    from: 1
+    to: 4
+    label: "shape into 25g balls · leave space to puff"
+  - col: 4
+    from: 1
+    to: 4
+    label: "bake at 200°C"
+    time: "25–30 min"
+after:
+  - "Eat while hot — they firm up as they cool"
+  - "Or freeze the raw balls and bake from frozen, adding 5–7 minutes"
+{{< /recipe-grid >}}
 
 ## Step-by-Step Instructions (Simple and Clear!)
 

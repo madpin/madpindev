@@ -7,13 +7,13 @@ title: A Dublin Ricotta Christmas
 subtitle: Finding the flavors of home in a festive Italian treat
 description: Recreating my mother's ricotta pie in Dublin and discovering how food can carry memories of São Paulo across the world.
 date: 2024-12-26
-lastmod: 2024-12-26
+lastmod: 2026-09-30
 slug: a-dublin-ricotta-christmas
 author: Thiago MadPin
 image: cover.jpg
 imageAlt: A freshly baked ricotta pie served at Christmas
 categories: [Recipes]
-tags: [christmas, food, ricotta]
+tags: [recipe, christmas, pie, ricotta, cheese, baking, adhd]
 ---
 
 It's funny how the aroma of certain foods can act as a time machine, instantly transporting you back to cherished moments. As I stand here in my Dublin kitchen, the scent of baking ricotta mingling with the crisp December air, I'm not just in Ireland anymore. I'm also back in São Paulo, in my mother's cozy kitchen, watching her work her culinary magic. This Christmas, that magic comes in the form of a Ricotta Pie – a dish that, while Italian, resonates deeply with my Brazilian heart.
@@ -42,6 +42,65 @@ Here's what we need, inspired by the Italian tradition, but with a nod to my own
 | Salt              | 0.5 tsp              | 3g    |
 | Black Pepper      | To taste             | -     |
 | Egg White         | 1                    | 33g   |
+
+## The Recipe as Two Small Jobs
+
+Ingredients with quantities down the left, operations merged across the rows they consume. Read a row rightwards to see where that ingredient ends up; read a cell downwards to see everything that goes into it.
+
+Line the mold and chill the pastry first. Grid 1 is the filling, and it fits inside that wait. Grid 2 is where the chilled pastry, the egg white, and the filling meet.
+
+### 1 · The Filling
+
+{{< recipe-grid >}}
+caption: "Grid 1 — the filling, while the pastry chills"
+before:
+  - "Line a mold with 250g puff pastry, trim the excess, and chill it while you mix this"
+ingredients:
+  - "500g ricotta"
+  - "171g eggs (3 large)"
+  - "125g mozzarella, cubed"
+  - "100g Parmesan, grated"
+  - "2g dried parsley (2 tsp)"
+  - "3g salt (½ tsp)"
+  - "black pepper, to taste"
+steps:
+  - col: 1
+    from: 1
+    to: 2
+    label: "mix until smooth"
+  - col: 2
+    from: 1
+    to: 7
+    label: "stir in until evenly distributed"
+{{< /recipe-grid >}}
+
+### 2 · Assemble and Bake
+
+{{< recipe-grid >}}
+caption: "Grid 2 — assemble and bake"
+before:
+  - "Oven at 180°C (356°F)"
+ingredients:
+  - "the chilled puff pastry (250g)"
+  - "33g egg white (1)"
+  - "the cheese filling, from grid 1"
+steps:
+  - col: 1
+    from: 1
+    to: 2
+    label: "brush the pastry"
+  - col: 2
+    from: 1
+    to: 3
+    label: "pour in the filling and spread it evenly"
+  - col: 3
+    from: 1
+    to: 3
+    label: "bake until golden"
+    time: "about 45 min"
+after:
+  - "Cool before slicing, so the filling can set"
+{{< /recipe-grid >}}
 
 ## Crafting the Pie: A Step-by-Step Journey
 

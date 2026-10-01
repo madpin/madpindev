@@ -7,13 +7,13 @@ title: "10 Chickens, 10 Dishes, 1 Hour"
 subtitle: An accessible guide with quick recipes, tips, and time-saving tricks
 description: Chef Kush turns 10 chickens into a global feast using smart shortcuts, pantry boosters, and parallel cooking. This guide adapts the ideas for home cooks.
 date: 2025-09-08
-lastmod: 2025-09-08
+lastmod: 2026-09-30
 slug: 10-chickens-10-dishes-1-hour
 author: Thiago MadPin
 image: cover.png
 imageAlt: Ten prepared chicken dishes arranged as a global feast
 categories: [Recipes]
-tags: [chicken, cooking, recipes, meal-planning]
+tags: [recipe, chicken, cooking, meal-planning]
 ---
 
 > *Your accessible guide with quick recipes, tips, and time-saving tricks*

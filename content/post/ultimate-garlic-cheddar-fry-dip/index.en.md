@@ -8,13 +8,13 @@ title: Ultimate Garlic-Cheddar Fry Dip
 subtitle: A glossy cheese sauce with a little kitchen science in every scoop
 description: Make a smooth garlic-cheddar dip for fries on the stovetop or in the microwave, and learn why American cheese keeps the sauce silky.
 date: 2026-08-03
-lastmod: 2026-08-03
+lastmod: 2026-09-30
 slug: ultimate-garlic-cheddar-fry-dip
 author: Thiago MadPin
 image: cover.png
 imageAlt: Golden garlic-cheddar dip in a bowl with crisp French fries
 categories: [Recipes]
-tags: [cheese, garlic, dip, food-science]
+tags: [recipe, cheese, garlic, dip, food-science, adhd]
 ---
 
 Some foods politely accompany fries. This dip grabs them by the hand and runs away with them.
@@ -47,6 +47,81 @@ The secret is a two-cheese alliance: American cheese brings the smooth-melting s
 
 > [!TIP]
 > Grate the cheddar yourself. Pre-grated cheese is often coated with starch or cellulose to stop it clumping in the bag; those coatings can make a sauce less smooth.
+
+## 🧠 The Recipe as Two Pictures
+
+Ingredients with quantities down the left, operations merged across the rows they consume. Read a row rightwards to see where that ingredient ends up; read a cell downwards to see everything that goes into it.
+
+The two grids are the same sauce. Only the heat source changes. American cheese still goes in before the cheddar, and the cheddar still goes in off the heat.
+
+### Stovetop
+
+{{< recipe-grid >}}
+caption: "Stovetop — one small saucepan, about 5 minutes"
+before:
+  - "Small saucepan over medium-low heat"
+ingredients:
+  - "15g butter"
+  - "8g fresh garlic, finely minced or grated"
+  - "80g low-fat milk"
+  - "80g (about 4 slices) American cheese, torn into pieces"
+  - "115g light cheddar, freshly grated"
+steps:
+  - col: 1
+    from: 1
+    to: 2
+    label: "melt · cook until fragrant, not brown"
+    time: "30–40 sec"
+  - col: 2
+    from: 1
+    to: 3
+    label: "stir until warm and steaming · do not boil"
+  - col: 3
+    from: 1
+    to: 4
+    label: "add a few pieces at a time · stir until smooth"
+  - col: 4
+    from: 1
+    to: 5
+    label: "heat off · add in 2–3 handfuls · stir until glossy"
+after:
+  - "Serve immediately · if it thickens, stir in warm milk 1 tsp at a time"
+{{< /recipe-grid >}}
+
+### Microwave
+
+{{< recipe-grid >}}
+caption: "Microwave — same order, a bowl instead of a pan"
+before:
+  - "Microwave-safe bowl of at least 1 litre, so stirring does not repaint the inside"
+ingredients:
+  - "15g butter"
+  - "8g fresh garlic, finely minced or grated"
+  - "80g low-fat milk"
+  - "80g (about 4 slices) American cheese, torn into pieces"
+  - "115g light cheddar, freshly grated"
+steps:
+  - col: 1
+    from: 1
+    to: 2
+    label: "20 sec · stir · 10–20 sec more, fragrant not brown"
+  - col: 2
+    from: 1
+    to: 3
+    label: "stir in · heat until hot, not boiling"
+    time: "30–45 sec"
+  - col: 3
+    from: 1
+    to: 4
+    label: "15 sec bursts, stirring after each, until smooth"
+    time: "45–75 sec"
+  - col: 4
+    from: 1
+    to: 5
+    label: "add in 2–3 batches · stir · one 10 sec burst only if needed"
+after:
+  - "Rest 30 sec · stir · serve"
+{{< /recipe-grid >}}
 
 ## 🍳 Stovetop Method
 
