@@ -24,7 +24,7 @@
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:image" content="{{ $imageURL }}">
 {{ with .Params.imageAlt }}<meta property="og:image:alt" content="{{ . }}">{{ end }}
-<meta property="og:locale" content="{{ replace site.Language.Locale "-" "_" }}">
+<meta property="og:locale" content="{{ replace (partial "locale.html" site.Language) "-" "_" }}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ .Title | default site.Title }}">
 <meta name="twitter:description" content="{{ $description }}">
@@ -35,7 +35,7 @@
   {{ with .Lastmod }}<meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}
   {{ range .Params.tags }}<meta property="article:tag" content="{{ . }}">{{ end }}
 {{ end }}
-{{ range .AllTranslations }}<link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink }}">{{ end }}
+{{ range .AllTranslations }}<link rel="alternate" hreflang="{{ partial "locale.html" .Language }}" href="{{ .Permalink }}">{{ end }}
 {{ if gt (len .AllTranslations) 1 }}<link rel="alternate" hreflang="x-default" href="{{ (index .AllTranslations 0).Permalink }}">{{ end }}
 {{ with site.Home.OutputFormats.Get "RSS" }}<link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ .Permalink }}">{{ end }}
 <link rel="icon" href="{{ "img/favicon.ico" | relURL }}" sizes="any">
