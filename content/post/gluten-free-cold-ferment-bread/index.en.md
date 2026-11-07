@@ -17,9 +17,11 @@ tags: [recipe, bread, gluten-free, cold-ferment, baking, food-science, adhd]
 
 I used to think gluten-free bread was just regular bread with the good part removed. Mix, rise fast, bake, slice it warm and wonder why the inside is wet.
 
-The fridge changes that. A slow **12 to 18 hour cold ferment** does not just delay the bake — it lets the dough build **organic acids** that mimic sourdough tang, and it gives **psyllium husk** time to fully hydrate into the gel that holds a gluten-free loaf together. No gluten network means no fast warm rise to hide behind. Time is the structure.
+I have not baked this loaf yet. I am writing this before I do, on purpose.
 
-This loaf is built for that overnight wait. You mix for **about 25 minutes**, give it **1 hour** at room temperature, then the fridge does the work while you sleep.
+The fridge is supposed to change that. A slow **12 to 18 hour cold ferment** does not just delay the bake — it lets the dough build **organic acids** that mimic sourdough tang, and it gives **psyllium husk** time to fully hydrate into the gel that holds a gluten-free loaf together. No gluten network means no fast warm rise to hide behind. Time is the structure.
+
+This loaf is built for that overnight wait. You mix for **about 25 minutes**, give it **1 hour** at room temperature, then the fridge does the work while you sleep. Publishing it now is the trick: I have to come back and update it with what actually happened — crumb photo, what went wrong, and whether I would make it again.
 
 > [!NOTE]
 > **The honest headline:** active time is about **25 minutes**. Total time is **13 to 19 hours**, almost all of it hands-off in the fridge. The two grids below split the job so you never hold the whole loaf in your head at once.
@@ -41,7 +43,7 @@ This loaf is built for that overnight wait. You mix for **about 25 minutes**, gi
 
 | Ingredient | Quantity | What it does |
 | --- | --- | --- |
-| Sorghum flour (or brown rice flour) | **150 g** | The main flour body. Mild, slightly sweet, and naturally gluten-free — it gives the crumb its structure without tightness |
+| Sorghum flour (or brown rice flour) | **150 g** | The main flour body. Mild, slightly sweet, and naturally gluten-free — it gives the crumb its structure without tightness. I have a free bag of gluten-free brown flour in the cupboard, so that is the one I will try first here, swapping it in gram for gram |
 | Tapioca starch / flour | **100 g** | The stretch. Tapioca gelatinises into a chewy, elastic crumb that keeps the loaf from being crumbly |
 | Potato starch (not potato flour) | **100 g** | The softness. Holds water, lightens the crumb, and slows staling — potato flour would be heavier and gummier |
 | Teff flour or buckwheat flour | **50 g** | The depth. Dark, earthy flavour and colour, so the loaf tastes like bread instead of a starch cake |
@@ -236,6 +238,7 @@ Yeast at fridge temperature works slowly, producing **organic acids** in small a
 
 ## ✨ Make It Yours
 
+- **With the free bag:** swap in my free gluten-free brown flour gram for gram for the **150 g** sorghum/brown rice flour, and note the result here when I bake it.
 - **Tangy:** use **buckwheat** instead of teff and ferment the full **18 hours**.
 - **Neutral:** use **brown rice flour** instead of sorghum and olive oil instead of butter, for a cleaner crumb.
 - **Rich:** use melted butter instead of olive oil and add **10 g** extra to the dough.
@@ -251,9 +254,11 @@ Store the whole loaf, cut-side down, in a cloth bag at room temperature for **1 
 
 ## 💭 Final Thoughts
 
-The first time I made this, I sliced it after **20 minutes** because I could not wait, and the centre was wet enough to stick to the knife. The same recipe, cooled for **2 hours**, was a completely different loaf. Cold fermenting does not make gluten-free bread behave like wheat bread — it makes it behave like itself, with time doing the work gluten used to do.
+This post is a commitment, not a result. I have not baked it, I have not tasted it, and I do not know yet whether the free gluten-free brown flour will work gram for gram or whether the crumb will be gummy, flat, or surprisingly good.
 
-Have you tried a fridge ferment with psyllium, or do you still bake gluten-free the same day? Tell me what your crumb does at the **2 hour** mark.
+When I do bake it, I will come back here and add the crumb photo, the real timings, and what I would change. That is the whole point of publishing early — future me cannot quietly abandon a half-finished recipe if the internet already has it.
+
+Have you tried a fridge ferment with psyllium, or do you still bake gluten-free the same day? Tell me what your crumb does at the **2 hour** mark — I will compare when I finally get mine in the oven.
 
 ## Image Credits
 
