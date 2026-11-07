@@ -1,0 +1,3 @@
+{{- /* Locale shim: site.Language.Locale needs Hugo >= 0.158, Cloudflare may run older.
+       Derive en-US / pt-BR from Lang so the site builds on both old and new Hugo. */ -}}
+{{- if eq .Lang "pt-br" -}}pt-BR{{- else -}}en-US{{- end -}}

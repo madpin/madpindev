@@ -23,7 +23,7 @@
       </button>
       {{ if gt (len .AllTranslations) 1 }}
         <span class="language-links" role="group" aria-label="{{ i18n "languages" }}">
-          {{ range .AllTranslations }}<a href="{{ .RelPermalink }}" hreflang="{{ .Language.Locale }}" lang="{{ .Language.Locale }}"{{ if eq .Language.Lang site.Language.Lang }} aria-current="page"{{ end }}>{{ .Language.Label }}</a>{{ end }}
+          {{ range .AllTranslations }}<a href="{{ .RelPermalink }}" hreflang="{{ partial "locale.html" .Language }}" lang="{{ partial "locale.html" .Language }}"{{ if eq .Language.Lang site.Language.Lang }} aria-current="page"{{ end }}>{{ partial "language-label.html" .Language }}</a>{{ end }}
         </span>
       {{ end }}
     </div>
